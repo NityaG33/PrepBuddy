@@ -1,0 +1,110 @@
+[
+    {
+        "question": "What is a functional dependency?",
+        "expected_pages": [4]
+    },
+    {
+        "question": "What is full functional dependency?",
+        "expected_pages": [6]
+    },
+    {
+        "question": "What is partial functional dependency?",
+        "expected_pages": [7]
+    },
+    {
+        "question": "What is transitive functional dependency?",
+        "expected_pages": [8]
+    },
+    {
+        "question": "What is the difference between trivial and nontrivial functional dependency?",
+        "expected_pages": [9]
+    },
+    {
+        "question": "What are Armstrong's axioms?",
+        "expected_pages": [10]
+    },
+    {
+        "question": "What is the closure of a set of functional dependencies?",
+        "expected_pages": [12]
+    },
+    {
+        "question": "Given F = {A → B, A → C, CG → H, CG → I, B → H}, why is A → H logically implied?",
+        "expected_pages": [13]
+    },
+    {
+        "question": "How do you compute the closure of an attribute set?",
+        "expected_pages": [22]
+    },
+    {
+        "question": "For F = {A → BC, CD → E, B → D, E → A}, what is the closure of A?",
+        "expected_pages": [24]
+    },
+    {
+        "question": "What is a canonical cover?",
+        "expected_pages": [28]
+    },
+    {
+        "question": "What is an extraneous attribute in a functional dependency?",
+        "expected_pages": [27]
+    },
+    {
+        "question": "What are the three types of anomalies in an unnormalized database?",
+        "expected_pages": [32]
+    },
+    {
+        "question": "What is an insert anomaly?",
+        "expected_pages": [33]
+    },
+    {
+        "question": "What is the difference between lossy and lossless decomposition?",
+        "expected_pages": [39, 40]
+    },
+    {
+        "question": "What is normalization and why is it used?",
+        "expected_pages": [42]
+    },
+    {
+        "question": "What are the conditions for a relation to be in 1NF?",
+        "expected_pages": [45]
+    },
+    {
+        "question": "What are the conditions for a relation to be in 2NF?",
+        "expected_pages": [51]
+    },
+    {
+        "question": "What are the conditions for a relation to be in 3NF?",
+        "expected_pages": [56]
+    },
+    {
+        "question": "What are the conditions for a relation to be in BCNF?",
+        "expected_pages": [61]
+    },
+    {
+        "question": "What is a multivalued dependency?",
+        "expected_pages": [65, 70]
+    },
+    {
+        "question": "What are the conditions for a relation to be in 4NF?",
+        "expected_pages": [71]
+    },
+    {
+        "question": "What is the difference between a functional dependency and a multivalued dependency?",
+        "expected_pages": [72]
+    },
+    {
+        "question": "What are the conditions for a relation to be in 5NF?",
+        "expected_pages": [75, 76]
+    },
+    {
+        "question": "How is an employee-project database normalized to 3NF?",
+        "expected_pages": [77, 78, 79, 80, 81]
+    },
+    {
+        "question": "What are the drawbacks of normalization?",
+        "expected_pages": [82]
+    },
+    {
+        "question": "What is denormalization and why is it used?",
+        "expected_pages": [82]
+    }
+]
