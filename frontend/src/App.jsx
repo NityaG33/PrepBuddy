@@ -5,11 +5,8 @@ function App() {
     return (
         <div>
             <h1>InterviewPrep RAG</h1>
-
             <DocumentUpload />
-
             <hr />
-
             <Chat />
         </div>
     );

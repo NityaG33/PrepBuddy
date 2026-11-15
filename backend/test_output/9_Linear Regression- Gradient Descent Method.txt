@@ -1,0 +1,1067 @@
+--- PAGE 1 ---
+Linear Regression
+
+(Gradient Descent Optimization)
+
+TIET, PATIALA
+
+--- PAGE 2 ---
+Simple Linear Regression- Cost Function
+
+Overview
+
+▪We know, the linear function that binds the input
+
+Table 1: Dataset for SLR containing 3
+
+instances
+
+variable x with the corresponding predicted value
+of (yˆ) is given by:
+
+Independent Variable
+
+Dependent Variable
+
+𝑦ˆ=𝛽0 + 𝛽1𝑥
+
+(xi)
+
+(yi)
+
+▪The cost function (mean square error function) is
+
+1
+1
+
+given by:
+
+𝑛
+
+2
+2
+
+J(𝛽0, 𝛽1)= 1
+
+(𝑦𝑖−𝛽0 −𝛽1𝑥𝑖)2
+
+𝑛෍
+
+𝑖=1
+
+3
+3
+
+▪The cost function is a function of 𝛽0 and 𝛽1.
+
+▪Let’s plot the cost function as function of 𝛽1
+
+considering 𝛽0=0 (for the sake of simplicity i.e.,
+2D view). Consider the dataset shown in Table 1
+
+--- PAGE 3 ---
+Plot of Cost Function of SLR
+
+Table 2: Value of Cost Function 𝐽𝛽1 for different values of 𝛽1
+
+J(β1) vs. β1
+
+5
+
+(using dataset shown in Table 1)
+
+4.5
+
+4
+
+𝑛
+
+S.No
+𝛽1
+
+3.5
+
+J(𝛽1)= 1
+
+(𝑦𝑖−𝛽1𝑥𝑖)2
+
+3
+
+𝑛෍
+
+𝑖=1
+
+2.5
+
+J(β1)
+
+2
+
+1
+1
+𝐽𝛽1 =
+
+1.5
+
+1
+3 [ 1 −1 2 + (2 −2)2+(3 −3)2]=0
+
+1
+
+2
+0.5
+𝐽𝛽1 =
+
+0.5
+
+1
+3 [ 1 −0.5 2 + (2 −1)2+(3 −1.5)2]=1.67
+
+0
+
+0
+0.5
+1
+1.5
+2
+2.5
+
+3
+0
+𝐽𝛽1 =
+
+1
+3 [ 1 −0 2 + (2 −0)2+(3 −0)2]=4.67
+
+β1
+
+4
+1.5
+𝐽𝛽1 =
+
+1
+3 [ 1 −1.5 2 + (2 −3)2+(3 −4.5)2]=1.67
+
+5
+2
+𝐽𝛽1 =
+
+1
+3 [ 1 −2 2 + (2 −4)2+(3 −6)2]=4.67
+
+It is clear from the above function that the cost
+function is parabolic in shape (bowl-shaped)
+with one point of minimum where the mean
+square error is zero.
+
+--- PAGE 4 ---
+Plot of Cost Function of SLR 
+(Cost Function as function of 𝛽0 and 𝛽1)
+
+SURFACE PLOT
+
+CONTOUR PLOT
+
+(BOWL SHAPED CURVE WITH ONLY ONE POINT OF
+
+(SAME COLOR LINES MEAN SAME VALUE OF COST FUNCTION AT
+
+MINIMUM)
+
+DIFFERENT POINTS OF 𝛽0 AND 𝛽1)
+
+Contour plot represents a 3-dimensional surface by plotting constant
+z slices, called contours, on a 2-dimensional format.
+
+--- PAGE 5 ---
+Gradient Descent Optimization- Introduction
+
+▪Gradient Descent is an optimization algorithm for finding a local minimum of a differentiable
+
+function.
+
+▪Gradient descent is simply used to find the values of a function's parameters (coefficients) that
+
+minimize a cost function as far as possible. i.e.,
+
+𝑎𝑟𝑔𝑚𝑖𝑛(𝛽0,𝛽1,𝛽2……..,𝛽𝑛) 𝐽(𝛽0, 𝛽1, 𝛽2 … … . . , 𝛽𝑛)
+
+▪It's based on minimizing a convex cost function and tweaks its parameters iteratively to minimize
+
+a given function to its local minimum.
+
+▪It considers gradient of the cost function to tune the parameters.
+
+▪Gradient can be considered as the slope of a function. The higher the gradient, the steeper the slope
+
+and the faster a model can learn. But if the slope is zero, the model stops learning.
+
+▪In mathematical terms, a gradient is a partial derivative of the function with respect to its inputs.
+
+--- PAGE 6 ---
+Gradient Descent Optimization- Introduction
+
+▪The image illustrates the cost function from a
+
+top-down view and the black arrows are the
+steps of gradient descent algorithm.
+
+▪The algorithm will reach to different local or
+
+global minimum depending upon the initial
+value of 𝛽0 and 𝛽1.
+
+▪The gradient in this context is a vector that
+
+contains the direction of the steepest step the
+algorithm can take and also how long that step
+should be.
+
+--- PAGE 7 ---
+Steps of Gradient Descent Optimization
+
+▪In order to minimize any differentiable cost function, 𝐽(𝛽0, 𝛽1, 𝛽2 … … . . , 𝛽𝑘) , containing
+
+parameters 𝛽0, 𝛽1, 𝛽2 … … . . , 𝛽𝑘, following steps are followed in gradient descent optimization:
+1. Initialize the parameters, 𝛽0, 𝛽1, 𝛽2 … … . . , 𝛽𝑘, to any arbitrary values. Usually, these are set to 0
+initial value.
+2. Update the values of parameters 𝛽0, 𝛽1, 𝛽2 … … . . , 𝛽𝑘, using the following equation (until
+convergence or for fixed number of iterations:
+
+𝑓𝑜𝑟𝑗= 0,1,2, … … . . 𝑘
+
+𝛽𝑗= 𝛽𝑗−𝛼𝜕(𝐽𝛽)
+
+𝜕𝛽𝑗
+
+▪This update must be simultaneous i.e., the RHS of the above equations must be stored in temporary
+
+variables for each value of j and then simultaneously assigned.
+
+𝜕(𝐽𝛽)
+
+▪Here 𝛼is called the fixed step size that controls the step size and
+
+𝜕𝛽𝑗
+is called the gradient of
+
+cost function.
+▪Convergence of 𝛽𝑗’s means that there is no change in value of 𝛽𝑗which will happen only when
+
+𝜕(𝐽𝛽)
+
+𝜕𝛽𝑗
+= 0
+
+--- PAGE 8 ---
+Gradient Descent Optimization- Intuition
+
+▪The intuition behind gradient descent optimization is that it may
+
+start from any arbitrary point it may converge at some local or
+global minimum.
+
+▪For instance, consider cost function with only one parameter (θ1).
+
+The shape of cost function is shown in the images 1 and 2.
+
+𝜕𝐽(𝜃1)
+
+▪If we start from θ1 as shown in figure 1, then gradient
+
+𝜕𝜃1
+is
+positive. Therefore, 𝜃1 = 𝜃1 −𝑝𝑜𝑠𝑖𝑡𝑖𝑣𝑒𝑞𝑢𝑎𝑛𝑡𝑖𝑡𝑦. So, it will
+slowly move towards the minimum point.
+
+𝜕𝐽(𝜃1)
+
+▪If we start from θ1 as shown in figure 2, then gradient
+
+𝜕𝜃1
+is
+negative. Therefore, 𝜃1 = 𝜃1 + 𝑝𝑜𝑠𝑖𝑡𝑖𝑣𝑒𝑞𝑢𝑎𝑛𝑡𝑖𝑡𝑦. So, it will
+again slowly move towards the minimum point.
+
+--- PAGE 9 ---
+Learning Rate in Gradient Descent
+
+Why is learning rate fixed?
+
+▪Gradient
+descent
+algorithm,
+can
+converge to a local minimum, even
+with fixed learning rate.
+
+𝜃1 = 𝜃1 −𝛼𝜕(𝐽𝜃)
+
+𝜕𝜃1
+▪As we approach a local minimum,
+
+gradient
+descent
+will
+automatically
+take smaller steps.
+
+▪So, no need to decrease learning rate
+
+over time.
+
+--- PAGE 10 ---
+Learning Rate in Gradient Descent Contd…
+
+What if learning rate is too small?
+
+What if learning rate is too large?
+
+▪If learning rate is small, then gradient
+
+▪If learning rate is too large, then
+
+descent will take a lot of time to
+converge (as shown in the figure).
+
+gradient descent can overshoot the
+minimum.
+
+▪It may fail to converge or even
+
+diverge (as shown in figure below).
+
+--- PAGE 11 ---
+Gradient Descent for Simple Linear
+
+Regression (SLR)
+
+▪The cost function (mean square error function) for simple linear regression is dependent upon
+
+two parameters 𝛽0 and 𝛽1 and is given by:
+
+𝑛
+
+𝐽𝛽0,𝛽1 = 1
+
+(𝑦𝑖−𝛽0 −𝛽1𝑥𝑖)2
+
+2𝑛෍
+
+𝑖=1
+
+▪where n are total number of training examples and dividing cost function by 2 will not affect the
+
+minimization process.
+
+▪The gradient of the cost function is the partial derivative of cost function with respect to input
+
+parameters 𝛽0 and 𝛽1 and is computed as below:
+
+𝑛
+
+𝑛
+
+𝐽𝛽0,𝛽1 = 𝜕
+
+(𝑦𝑖−𝛽0 −𝛽1𝑥𝑖)2
+= 1
+
+(𝑦𝑖−𝛽0 −𝛽1𝑥𝑖) × (−1)
+
+1
+2𝑛෍
+
+2𝑛× 2 ෍
+
+𝜕
+𝜕𝛽0
+
+𝜕𝛽0
+
+𝑖=1
+
+𝑖=1
+
+Therefore,
+
+𝒏(𝜷𝟎+ 𝜷𝟏𝒙𝒊−𝒚𝒊)
+
+𝟏
+𝒏σ𝒊=𝟏
+
+𝝏
+𝝏𝜷𝟎𝑱𝜷𝟎,𝜷𝟏=
+
+--- PAGE 12 ---
+Gradient Descent for SLR Contd…..
+
+▪Similarly,
+
+1
+2𝑛σ𝑖=1
+𝑛(𝑦𝑖−𝛽0 −𝛽1𝑥𝑖)2
+=
+
+1
+2𝑛× 2 σ𝑖=1
+𝑛(𝑦𝑖−𝛽0 −𝛽1𝑥𝑖) × (−𝑥𝑖)
+
+𝜕
+𝜕𝛽1
+
+𝜕
+𝜕𝛽1 𝐽𝛽0,𝛽1 =
+
+Therefore,
+
+𝒏(𝜷𝟎+ 𝜷𝟏𝒙𝒊−𝒚𝒊) × (𝒙𝒊)
+
+𝟏
+𝒏σ𝒊=𝟏
+
+𝝏
+𝝏𝜷𝟎𝑱𝜷𝟎,𝜷𝟏=
+
+▪The gradient descent optimization for Simple Linear Regression is summarized as below:
+
+1.
+Initialize 𝛽0 =0 and 𝛽1 = 0
+
+2.
+Update 𝛽0 and 𝛽1 until convergence or for fixed number of iterations using following equations:
+
+𝑛
+
+𝑡𝑒𝑚𝑝0 ≔𝛽0 −𝛼
+
+(𝛽0 + 𝛽1𝑥𝑖−𝑦𝑖)
+
+𝑛× ෍
+
+𝑖=1
+
+𝑛
+
+𝑡𝑒𝑚𝑝1 ≔𝛽1 −𝛼
+
+𝛽0 + 𝛽1𝑥𝑖−𝑦𝑖× 𝑥𝑖
+
+𝑛× ෍
+
+𝑖=1
+
+𝛽0 ≔𝑡𝑒𝑚𝑝0
+𝛽1 ≔𝑡𝑒𝑚𝑝1
+
+--- PAGE 13 ---
+Gradient Descent for SLR- Example
+
+Consider the following dataset that shows the salary of an employee as function of years
+of Experience. For the given dataset show first two iterations of gradient descent
+optimization for linear regression. Initialize 𝛽0 =0 and 𝛽1 = 0
+and consider learning
+rate as 0.01
+
+--- PAGE 14 ---
+Gradient Descent for SLR- Example
+
+Initialize, 𝛽0 =0 and 𝛽1 = 0
+
+2
+
+S.No
+xi
+yi
+xiyi
+xi
+
+1
+2
+15000
+30000
+4
+
+We know, in each iteration 𝛽0 and 𝛽1
+are updated as follows:
+
+2
+3
+28000
+84000
+9
+
+3
+5
+42000
+210000
+25
+
+𝑡𝑒𝑚𝑝0 ≔𝛽0 −
+
+𝑛(𝛽0 + 𝛽1𝑥𝑖−𝑦𝑖)
+
+𝛼
+𝑛× σ𝑖=1
+
+𝑛
+
+4
+13
+64000
+832000
+169
+
+5
+8
+50000
+400000
+64
+
+𝑡𝑒𝑚𝑝1 ≔𝛽1 −𝛼
+
+𝛽0 + 𝛽1𝑥𝑖−𝑦𝑖× 𝑥𝑖
+
+𝑛× ෍
+
+𝑖=1
+
+6
+16
+90000
+1440000
+256
+
+7
+11
+58000
+638000
+121
+
+𝛽0 ≔𝑡𝑒𝑚𝑝0
+𝛽1 ≔𝑡𝑒𝑚𝑝1
+
+8
+1
+8000
+8000
+1
+
+9
+9
+54000
+486000
+81
+
+Total
+68
+409000
+4128000
+730
+
+--- PAGE 15 ---
+Gradient Descent for SLR- Example 
+Contd…
+
+First Iteration:
+
+2
+
+S.No
+xi
+yi
+xiyi
+xi
+
+𝑡𝑒𝑚𝑝0 ≔𝛽0 −𝛼
+
+𝑛(𝛽0 + 𝛽1𝑥𝑖−𝑦𝑖)
+
+𝑛× σ𝑖=1
+
+1
+2
+15000
+30000
+4
+
+𝑡𝑒𝑚𝑝0 ≔0 −0.01
+
+9
+0 × 9 + 0 × 68 −409000 = 454.44
+
+2
+3
+28000
+84000
+9
+
+𝑛
+
+3
+5
+42000
+210000
+25
+
+𝑡𝑒𝑚𝑝1 ≔𝛽1 −𝛼
+
+𝛽0 + 𝛽1𝑥𝑖−𝑦𝑖× 𝑥𝑖
+
+𝑛× ෍
+
+𝑖=1
+
+4
+13
+64000
+832000
+169
+
+𝑡𝑒𝑚𝑝1 ≔0 −0.01
+
+5
+8
+50000
+400000
+64
+
+9
+0 × 68 + 0 × 730 −4128000 = 4586.67
+
+6
+16
+90000
+1440000
+256
+
+7
+11
+58000
+638000
+121
+
+𝜷𝟎= 𝟒𝟓𝟒. 𝟒𝟒
+𝜷𝟏= 𝟒𝟓𝟖𝟔. 𝟔𝟕
+
+8
+1
+8000
+8000
+1
+
+9
+9
+54000
+486000
+81
+
+Total
+68
+409000
+4128000
+730
+
+--- PAGE 16 ---
+Gradient Descent for SLR- Example 
+Contd…
+
+Second Iteration:
+
+2
+
+S.No
+xi
+yi
+xiyi
+xi
+
+𝑡𝑒𝑚𝑝0 ≔𝛽0 −𝛼
+
+𝑛(𝛽0 + 𝛽1𝑥𝑖−𝑦𝑖)
+
+𝑛× σ𝑖=1
+
+1
+2
+15000
+30000
+4
+
+2
+3
+28000
+84000
+9
+
+𝑡𝑒𝑚𝑝0 ≔454.44 −0.01
+
+3
+5
+42000
+210000
+25
+
+9
+454.44 × 9 + 4586.67 × 68 −409000
+= 557.79
+
+𝑛
+
+4
+13
+64000
+832000
+169
+
+𝑡𝑒𝑚𝑝1 ≔𝛽1 −𝛼
+
+𝛽0 + 𝛽1𝑥𝑖−𝑦𝑖× 𝑥𝑖
+
+5
+8
+50000
+400000
+64
+
+𝑛× ෍
+
+𝑖=1
+
+6
+16
+90000
+1440000
+256
+
+7
+11
+58000
+638000
+121
+
+𝑡𝑒𝑚𝑝1
+
+≔4586.67 −0.01
+
+8
+1
+8000
+8000
+1
+
+9
+454.44 × 68 + 4586.67 × 730 −4128000
+= 5418.70
+
+9
+9
+54000
+486000
+81
+
+Total
+68
+409000
+4128000
+730
+
+𝜷𝟎= 𝟓𝟓. 𝟕𝟗
+𝜷𝟏= 𝟓𝟒𝟏𝟖. 𝟕𝟎
+
+--- PAGE 17 ---
+Gradient Descent Optimization for
+
+Multiple Linear Regression (MLR)
+
+▪A multiple linear regression model with k independent predictor variables x1,x2...,xk predicts the
+
+output variable as:
+
+𝑦ˆ = 𝛽0 + 𝛽1𝑥1 + 𝛽2𝑥2 + 𝛽3𝑥3 + ⋯… … … . . +𝛽𝑘𝑥𝑘
+
+▪The cost function (mean square error function) is given by:
+
+𝑛
+
+𝐽= 1
+
+(𝑦𝑖−𝛽0 −𝛽1𝑥𝑖1 −𝛽2𝑥𝑖2 −𝛽3𝑥𝑖3 −⋯… … … . . −𝛽𝑘𝑥𝑖𝑘)2
+
+2𝑛෍
+
+𝑖=1
+
+Gradient of the cost function with respect to input parameters is given by:
+
+𝑛
+
+= 1
+
+(𝛽0 + 𝛽1𝑥𝑖1 + 𝛽2𝑥𝑖2 + 𝛽3𝑥𝑖3 + ⋯… … … . . +𝛽𝑘𝑥𝑖𝑘−𝑦𝑖)
+
+𝑛෍
+
+𝜕𝐽
+𝜕𝛽0
+
+𝑖=1
+
+--- PAGE 18 ---
+Gradient Descent Optimization for MLR
+
+Similarly,
+
+𝑛(𝛽0 + 𝛽1𝑥𝑖1 + 𝛽2𝑥𝑖2 + 𝛽3𝑥𝑖3 + ⋯… … … . . +𝛽𝑘𝑥𝑖𝑘−𝑦𝑖) × 𝑥𝑖1
+
+1
+𝑛σ𝑖=1
+
+𝜕𝐽
+𝜕𝛽1 =
+
+1
+𝑛σ𝑖=1
+
+𝜕𝐽
+𝜕𝛽2 =
+
+𝑛
+
+= 1
+
+(𝛽0 + 𝛽1𝑥𝑖1 + 𝛽2𝑥𝑖2 + 𝛽3𝑥𝑖3 + ⋯… … … . . +𝛽𝑘𝑥𝑖𝑘−𝑦𝑖) × 𝑥𝑖3
+
+𝑛෍
+
+𝑛(𝛽0 + 𝛽1𝑥𝑖1 + 𝛽2𝑥𝑖2 + 𝛽3𝑥𝑖3 + ⋯… … … . . +𝛽𝑘𝑥𝑖𝑘−𝑦𝑖) × 𝑥𝑖2
+𝜕𝐽
+𝜕𝛽3
+
+𝑖=1
+
+⋮
+⋮
+⋮
+
+In general,
+
+𝒏(𝜷𝟎+ 𝜷𝟏𝒙𝒊𝟏+ 𝜷𝟐𝒙𝒊𝟐+ 𝜷𝟑𝒙𝒊𝟑+ ⋯… … … . . +𝜷𝒌𝒙𝒊𝒌−𝒚𝒊) × 𝒙𝒊𝒋
+
+𝟏
+𝒏σ𝒊=𝟏
+
+𝝏𝑱
+𝝏𝜷𝒋=
+
+--- PAGE 19 ---
+Gradient Descent Optimization for MLR
+
+▪The gradient descent optimization for Multiple Linear Regression is summarized as below:
+
+1.
+Initialize 𝛽0 =0 , 𝛽1 = 0, 𝛽2 = 0,……………………………𝛽𝑘= 0
+
+2.
+Update parameters until convergence or for fixed number of iterations using following
+equation:
+
+𝑛
+
+𝛽𝑗= 𝛽𝑗−𝛼
+
+(𝛽0 + 𝛽1𝑥𝑖1 + 𝛽2𝑥𝑖2 + 𝛽3𝑥𝑖3 + ⋯… … … . . +𝛽𝑘𝑥𝑖𝑘−𝑦𝑖) × 𝑥𝑖𝑗
+
+𝑛෍
+
+𝑖=1
+
+For j=0,1,2,3……………..k
+
+Where xi0=1 and k are the total number of iterations
+
+--- PAGE 20 ---
+Gradient Descent Optimization for MLR-
+
+Example
+
+Consider the following dataset that shows the Stock Index Price as function of Interest Rate and
+Unemployment rate. For the given dataset show first iteration of gradient descent optimization for
+linear regression. Initialize 𝛽0 =0 , 𝛽1 = 0, , 𝛽2 = 0 and consider learning rate as 0.01
+
+Interest Rate  (xi1)
+Unemployment rate (xi2)
+Stock Index Price (yi)
+
+2.75
+5.3
+1464
+
+2.5
+5.3
+1394
+
+2.25
+5.5
+1159
+
+2
+5.7
+1130
+
+2
+5.9
+1075
+
+2
+6
+1047
+
+1.75
+5.9
+965
+
+1.75
+6.1
+719
+
+--- PAGE 21 ---
+Gradient Descent Optimization for MLR-
+
+Example
+
+Initially, 𝛽0 =0 , 𝛽1 = 0, , 𝛽2 = 0
+
+S.No
+(xi1)
+(xi2)
+(yi)
+xi1xi2
+xi1yi
+xi2yi
+(xi1)2
+(xi2i)2
+
+Iteration I:
+
+1
+2.75
+5.3
+1464 14.575 4026 7759.2 7.5625 28.09
+
+𝑛
+
+2
+2.5
+5.3
+1394
+13.25
+3485 7388.2
+6.25
+28.09
+
+𝑡𝑒𝑚𝑝0 ≔𝛽0 −𝛼
+
+(𝛽0 + 𝛽1𝑥𝑖1 + 𝛽2𝑥𝑖2 −𝑦𝑖
+
+𝑛
+෍
+
+𝑖=1
+
+3
+2.25
+5.5
+1159 12.375 2607.7
+5
+6374.5 5.0625 30.25
+
+𝑡𝑒𝑚𝑝0 ≔0 −0.01
+
+4
+2
+5.7
+1130
+11.4
+2260
+6441
+4
+32.49
+
+8
+8 × 0 + 17 × 0 + 45.7 × 0 −8953 = 11.19
+
+5
+2
+5.9
+1075
+11.8
+2150 6342.5
+4
+34.81
+
+𝑡𝑒𝑚𝑝1 ≔𝛽1 −𝛼
+
+𝑛(𝛽0 + 𝛽1𝑥𝑖1 + 𝛽2𝑥𝑖2 −𝑦𝑖× 𝑥𝑖1)
+
+𝑛σ𝑖=1
+
+6
+2
+6
+1047
+12
+2094
+6282
+4
+36
+
+0.01
+
+𝑡𝑒𝑚𝑝1 ≔0 −
+
+8
+17 × 0 + 37 × 0 + 96.4 × 0 −19569.75 = 24.46
+
+7
+1.75
+5.9
+965
+10.325 1688.7
+5
+5693.5 3.0625 34.81
+
+𝑡𝑒𝑚𝑝2 ≔𝛽2 −𝛼
+
+𝑛(𝛽0 + 𝛽1𝑥𝑖1 + 𝛽2𝑥𝑖2 −𝑦𝑖× 𝑥𝑖2)
+
+𝑛σ𝑖=1
+
+8
+1.75
+6.1
+719
+10.675 1258.2
+5
+4385.9 3.0625 37.21
+
+0.01
+
+𝑡𝑒𝑚𝑝2 ≔0 −
+
+8
+45.7 × 0 + 96.4 × 0 + 261.75 × 0 −50666.8 = 63.33
+
+Total
+17
+45.7
+8953
+96.4
+19569.
+75
+50666.
+8
+37
+261.75
+
+𝛽0 =11.19 , 𝛽1 = 24.46, , 𝛽2 = 63.33

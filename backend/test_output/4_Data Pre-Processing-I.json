@@ -1,0 +1,6096 @@
+{
+  "filename": "4_Data Pre-Processing-I.pdf",
+  "metadata": {
+    "format": "PDF 1.7",
+    "title": "Data Pre-Processing (Introduction, Need, Data Cleaning, Data Integration) ",
+    "author": "Jasmeet Singh",
+    "subject": "",
+    "keywords": "",
+    "creator": "Foxit Software Inc.",
+    "producer": "iOS Version 18.5 (Build 22F76) Quartz PDFContext, AppendMode 1.1",
+    "creationDate": "D:20230807102331+05'30'",
+    "modDate": "D:20250810172508Z00'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "page_count": 37,
+  "total_blocks": 248,
+  "processing_time_seconds": 0.538,
+  "pages": [
+    {
+      "page": 1,
+      "text": "Data Pre-Processing-I\n\n(Introduction, Need, Data Cleaning)\n\nTIET, PATIALA",
+      "blocks": [
+        {
+          "text": "Data Pre-Processing-I",
+          "bbox": [
+            147.30999755859375,
+            149.76199340820312,
+            818.1556396484375,
+            229.8260040283203
+          ],
+          "font_sizes": [
+            80.06400299072266
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "(Introduction, Need, Data Cleaning)",
+          "bbox": [
+            317.5,
+            227.68600463867188,
+            647.6919555664062,
+            254.25401306152344
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "TIET, PATIALA",
+          "bbox": [
+            721.510009765625,
+            356.0899963378906,
+            869.446044921875,
+            380.0899963378906
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 2,
+      "text": "Data\n\n▪Data is a unprocessed fact, value, text, sound or picture that is not being\n\ninterpreted and analyzed.\n\n▪Data is the most important part of all Data Analytics, Machine Learning,\n\nArtificial Intelligence.\n\n▪Big Enterprises are spending lots of money just to gather as much certain data as\n\npossible.\n\nIn 2021, Facebook acquire WhatsApp by paying a huge price of $19 billion",
+      "blocks": [
+        {
+          "text": "Data",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            181.0997314453125,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Data is a unprocessed fact, value, text, sound or picture that is not being",
+          "bbox": [
+            86.4000015258789,
+            147.6524200439453,
+            878.6490478515625,
+            174.43917846679688
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "interpreted and analyzed.",
+          "bbox": [
+            93.5999984741211,
+            173.80599975585938,
+            335.45001220703125,
+            200.37400817871094
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪Data is the most important part of all Data Analytics, Machine Learning,",
+          "bbox": [
+            86.4000015258789,
+            213.57398986816406,
+            878.6199951171875,
+            240.33399963378906
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Artificial Intelligence.",
+          "bbox": [
+            93.5999984741211,
+            239.6646270751953,
+            306.7460021972656,
+            266.2591857910156
+          ],
+          "font_sizes": [
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪Big Enterprises are spending lots of money just to gather as much certain data as",
+          "bbox": [
+            86.4000015258789,
+            279.364013671875,
+            878.4760131835938,
+            306.1239929199219
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "possible.",
+          "bbox": [
+            93.5999984741211,
+            305.4759826660156,
+            178.4600067138672,
+            332.0439758300781
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "In 2021, Facebook acquire WhatsApp by paying a huge price of $19 billion",
+          "bbox": [
+            100.33999633789062,
+            345.41461181640625,
+            864.3995361328125,
+            372.0091857910156
+          ],
+          "font_sizes": [
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        }
+      ],
+      "body_font_size": 24.02400016784668
+    },
+    {
+      "page": 3,
+      "text": "Structured vs. Unstructured Data in ML",
+      "blocks": [
+        {
+          "text": "Structured vs. Unstructured Data in ML",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            827.791015625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 48.02399826049805
+    },
+    {
+      "page": 4,
+      "text": "Structured Data in ML\n\n▪Structured data in Machine Learning is stored in the form of rows and columns.\n\n▪Each instance of structured data represents a feature/attribute.\n\n▪For instance a well known ML dataset, Iris, has five features about species\n\nnamely Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, Species.",
+      "blocks": [
+        {
+          "text": "Structured Data in ML",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            516.9315185546875,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Structured data in Machine Learning is stored in the form of rows and columns.",
+          "bbox": [
+            86.4000015258789,
+            153.2924346923828,
+            868.0659790039062,
+            180.07919311523438
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪Each instance of structured data represents a feature/attribute.",
+          "bbox": [
+            86.4000015258789,
+            201.9340057373047,
+            694.75,
+            228.6940155029297
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪For instance a well known ML dataset, Iris, has five features about species",
+          "bbox": [
+            86.4000015258789,
+            250.3924102783203,
+            878.5452880859375,
+            277.1791687011719
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-ItalicMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "namely Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, Species.",
+          "bbox": [
+            93.5999984741211,
+            285.1960144042969,
+            777.4600219726562,
+            311.7640075683594
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 24.02400016784668
+    },
+    {
+      "page": 5,
+      "text": "Types of Features\n\nQuantitative\n\nQualitative Nominal\n\nBinary\n\n(Numerical)\n\n(Categorical)\n\n• Which have two values\n(0/1, yes/no, true/false)\n• Examples-\nMarital\nStatus,\nPermanent\nEmployee, etc.\n\n• Categorical data where \norder of categories is \narbitrary\n• Example- account type \n(savings, current, fixed \nterm, etc).\n\n• Quantitative data being\nmeasured.\n• Can\nbe\nContinuous\n(infinite values- length,\nmass,\nweight)\nor\nDiscrete (finite integer\nvalues- no. of workers\nabsent)",
+      "blocks": [
+        {
+          "text": "Types of Features",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            422.3722839355469,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Quantitative",
+          "bbox": [
+            141.41000366210938,
+            176.17001342773438,
+            279.0574951171875,
+            202.2100067138672
+          ],
+          "font_sizes": [
+            26.040000915527344
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.45
+        },
+        {
+          "text": "Qualitative Nominal",
+          "bbox": [
+            652.2999877929688,
+            176.17001342773438,
+            868.6402587890625,
+            202.2100067138672
+          ],
+          "font_sizes": [
+            26.040000915527344
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.45
+        },
+        {
+          "text": "Binary",
+          "bbox": [
+            448.70001220703125,
+            190.45001220703125,
+            521.924560546875,
+            216.49000549316406
+          ],
+          "font_sizes": [
+            26.040000915527344
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.45
+        },
+        {
+          "text": "(Numerical)",
+          "bbox": [
+            145.00999450683594,
+            204.73001098632812,
+            269.403076171875,
+            230.77000427246094
+          ],
+          "font_sizes": [
+            26.040000915527344
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.45
+        },
+        {
+          "text": "(Categorical)",
+          "bbox": [
+            690.7000122070312,
+            204.73001098632812,
+            824.2330322265625,
+            230.77000427246094
+          ],
+          "font_sizes": [
+            26.040000915527344
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.45
+        },
+        {
+          "text": "• Which have two values\n(0/1, yes/no, true/false)\n• Examples-\nMarital\nStatus,\nPermanent\nEmployee, etc.",
+          "bbox": [
+            370.1499938964844,
+            249.70999145507812,
+            592.00244140625,
+            361.31597900390625
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "• Categorical data where \norder of categories is \narbitrary\n• Example- account type \n(savings, current, fixed \nterm, etc).",
+          "bbox": [
+            645.2899780273438,
+            246.6443634033203,
+            852.8284912109375,
+            375.7786560058594
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "• Quantitative data being\nmeasured.\n• Can\nbe\nContinuous\n(infinite values- length,\nmass,\nweight)\nor\nDiscrete (finite integer\nvalues- no. of workers\nabsent)",
+          "bbox": [
+            95.04000091552734,
+            249.70999145507812,
+            316.8750915527344,
+            427.34002685546875
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "Calibri-Bold",
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 20.040000915527344
+    },
+    {
+      "page": 6,
+      "text": "Types of Features Contd….\n\nInterval\n\nRatio\n\nQualitative \nOrdinal (Ranked)\n\n• Has meaningful intervals\nbetween measurement.\n• No true starting point\n(zero)\n• Example- Temperature\n\n• Categorical data where\nthere\nis\nsome\nlogical\nordering of categories\n• Example: Size (S, M, L,\nXL, XXL, etc.), Likert\nScale\n(Strongly\nDisagree,\nDisagree,\nNeutral, Agree, etc.)\n\n• Have highest level\nof\nmeasurement.\n• Ratios\nbetween\nmeasurements\nand\nintervals are meaningful\nbecause\nthere\nis\ntrue\nstarting point (zero)\n• Example: weight, Age",
+      "blocks": [
+        {
+          "text": "Types of Features Contd….",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            588.9161376953125,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.55
+        },
+        {
+          "text": "Interval",
+          "bbox": [
+            433.67999267578125,
+            189.42001342773438,
+            533.1000366210938,
+            219.42001342773438
+          ],
+          "font_sizes": [
+            30.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 2,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Ratio",
+          "bbox": [
+            725.9500122070312,
+            191.14999389648438,
+            789.1900024414062,
+            221.14999389648438
+          ],
+          "font_sizes": [
+            30.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 2,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Qualitative \nOrdinal (Ranked)",
+          "bbox": [
+            105.12000274658203,
+            174.64199829101562,
+            316.1999816894531,
+            237.55999755859375
+          ],
+          "font_sizes": [
+            30.02400016784668,
+            30.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 2,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "• Has meaningful intervals\nbetween measurement.\n• No true starting point\n(zero)\n• Example- Temperature",
+          "bbox": [
+            370.1499938964844,
+            254.97434997558594,
+            591.9822998046875,
+            366.9486389160156
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "• Categorical data where\nthere\nis\nsome\nlogical\nordering of categories\n• Example: Size (S, M, L,\nXL, XXL, etc.), Likert\nScale\n(Strongly\nDisagree,\nDisagree,\nNeutral, Agree, etc.)",
+          "bbox": [
+            95.04000091552734,
+            254.97434997558594,
+            317.0312805175781,
+            425.5086364746094
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "• Have highest level\nof\nmeasurement.\n• Ratios\nbetween\nmeasurements\nand\nintervals are meaningful\nbecause\nthere\nis\ntrue\nstarting point (zero)\n• Example: weight, Age",
+          "bbox": [
+            645.2899780273438,
+            254.97434997558594,
+            867.212158203125,
+            428.99383544921875
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.06399917602539,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.06399917602539
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 20.040000915527344
+    },
+    {
+      "page": 7,
+      "text": "Data Pre-Processing\n\n▪Data Pre-processing: It is that phase of any Machine Learning process, which transforms, or\n\nEncodes, the data to bring it to such a state where it can be easily interpreted by the learning\n\nalgorithm.\n\n“Data pre-processing is not a single standalone entity but a collection of multiple\n\ninterrelated tasks”\n\n“Collectively data pre-processing constitutes majority of the effort in machine learning\n\nprocess (approx. 90 % )”",
+      "blocks": [
+        {
+          "text": "Data Pre-Processing",
+          "bbox": [
+            93.5999984741211,
+            83.93263244628906,
+            434.4178466796875,
+            131.48934936523438
+          ],
+          "font_sizes": [
+            42.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Data Pre-processing: It is that phase of any Machine Learning process, which transforms, or",
+          "bbox": [
+            86.4000015258789,
+            154.33245849609375,
+            878.5813598632812,
+            176.70382690429688
+          ],
+          "font_sizes": [
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Encodes, the data to bring it to such a state where it can be easily interpreted by the learning",
+          "bbox": [
+            93.5999984741211,
+            185.73435974121094,
+            878.6105346679688,
+            207.91864013671875
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "algorithm.",
+          "bbox": [
+            93.5999984741211,
+            216.9343719482422,
+            176.38999938964844,
+            239.11865234375
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "“Data pre-processing is not a single standalone entity but a collection of multiple",
+          "bbox": [
+            142.94000244140625,
+            262.1529846191406,
+            831.7862548828125,
+            284.36383056640625
+          ],
+          "font_sizes": [
+            20.06399917602539
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "interrelated tasks”",
+          "bbox": [
+            402.8900146484375,
+            293.40435791015625,
+            561.8873291015625,
+            315.5886535644531
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "“Collectively data pre-processing constitutes majority of the effort in machine learning",
+          "bbox": [
+            113.30000305175781,
+            383.78436279296875,
+            856.4885864257812,
+            405.9686584472656
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "process (approx. 90 % )”",
+          "bbox": [
+            376.3699951171875,
+            414.9843444824219,
+            588.2330322265625,
+            437.16864013671875
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        }
+      ],
+      "body_font_size": 20.040000915527344
+    },
+    {
+      "page": 8,
+      "text": "Data Pre-Processing\n\n▪Data Pre-processing: It is that phase of any Machine Learning process, which transforms, or\n\nEncodes, the data to bring it to such a state where it can be easily interpreted by the learning\n\nalgorithm.\n\n“Data pre-processing is not a single standalone entity but a collection of multiple\n\ninterrelated tasks”\n\n“Collectively data pre-processing constitutes majority of the effort in machine learning\n\nprocess (approx. 90 % )”",
+      "blocks": [
+        {
+          "text": "Data Pre-Processing",
+          "bbox": [
+            93.5999984741211,
+            83.93263244628906,
+            434.4178466796875,
+            131.48934936523438
+          ],
+          "font_sizes": [
+            42.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Data Pre-processing: It is that phase of any Machine Learning process, which transforms, or",
+          "bbox": [
+            86.4000015258789,
+            154.33245849609375,
+            878.5813598632812,
+            176.70382690429688
+          ],
+          "font_sizes": [
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Encodes, the data to bring it to such a state where it can be easily interpreted by the learning",
+          "bbox": [
+            93.5999984741211,
+            185.73435974121094,
+            878.6105346679688,
+            207.91864013671875
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "algorithm.",
+          "bbox": [
+            93.5999984741211,
+            216.9343719482422,
+            176.38999938964844,
+            239.11865234375
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "“Data pre-processing is not a single standalone entity but a collection of multiple",
+          "bbox": [
+            142.94000244140625,
+            262.1529846191406,
+            831.7862548828125,
+            284.36383056640625
+          ],
+          "font_sizes": [
+            20.06399917602539
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "interrelated tasks”",
+          "bbox": [
+            402.8900146484375,
+            293.40435791015625,
+            561.8873291015625,
+            315.5886535644531
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "“Collectively data pre-processing constitutes majority of the effort in machine learning",
+          "bbox": [
+            113.30000305175781,
+            383.78436279296875,
+            856.4885864257812,
+            405.9686584472656
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "process (approx. 90 % )”",
+          "bbox": [
+            376.3699951171875,
+            414.9843444824219,
+            588.2330322265625,
+            437.16864013671875
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        }
+      ],
+      "body_font_size": 20.040000915527344
+    },
+    {
+      "page": 9,
+      "text": "Need of Data Pre-Processing\n\n➢\nData in the real world is “quite messy”\n\n•\nincomplete: missing feature values, absence of certain crucial feature, or containing only\n\naggregate data.\n\n▪\ne.g. Height=“ ”\n\n•\nnoisy: containing errors or outliers\n\n▪\ne.g. Weight=“5000” or “-60”\n\n•\ninconsistent: containing discrepancies in feature values.\n\n▪\ne.g. Age=“20” and dob=“12 july 1990”\n\n▪\ne.g. contradictions between duplicate records",
+      "blocks": [
+        {
+          "text": "Need of Data Pre-Processing",
+          "bbox": [
+            93.5999984741211,
+            83.93263244628906,
+            578.56787109375,
+            131.48934936523438
+          ],
+          "font_sizes": [
+            42.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "➢\nData in the real world is “quite messy”",
+          "bbox": [
+            86.4000015258789,
+            155.00637817382812,
+            463.5564880371094,
+            180.2659912109375
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            21.983999252319336
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.45
+        },
+        {
+          "text": "•\nincomplete: missing feature values, absence of certain crucial feature, or containing only",
+          "bbox": [
+            120.37999725341797,
+            192.4311981201172,
+            878.3955688476562,
+            214.3300018310547
+          ],
+          "font_sizes": [
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656
+          ],
+          "fonts": [
+            "ArialMT",
+            "Calibri",
+            "Calibri-Bold"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "aggregate data.",
+          "bbox": [
+            156.3800048828125,
+            225.010009765625,
+            275.9979248046875,
+            243.9700164794922
+          ],
+          "font_sizes": [
+            18.959999084472656
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪\ne.g. Height=“ ”",
+          "bbox": [
+            176.4199981689453,
+            257.12945556640625,
+            317.50274658203125,
+            276.7359924316406
+          ],
+          "font_sizes": [
+            17.06399917602539,
+            17.06399917602539,
+            17.06399917602539
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "•\nnoisy: containing errors or outliers",
+          "bbox": [
+            120.37999725341797,
+            290.26116943359375,
+            421.46551513671875,
+            312.15997314453125
+          ],
+          "font_sizes": [
+            18.959999084472656,
+            18.959999084472656,
+            18.959999084472656
+          ],
+          "fonts": [
+            "ArialMT",
+            "Calibri",
+            "Calibri-Bold"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "▪\ne.g. Weight=“5000” or “-60”",
+          "bbox": [
+            176.4199981689453,
+            325.3410339355469,
+            411.21270751953125,
+            344.9200134277344
+          ],
+          "font_sizes": [
+            17.040000915527344,
+            17.040000915527344,
+            17.040000915527344
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "•\ninconsistent: containing discrepancies in feature values.",
+          "bbox": [
+            120.37999725341797,
+            358.3995056152344,
+            577.85400390625,
+            380.3260192871094
+          ],
+          "font_sizes": [
+            18.983999252319336,
+            18.983999252319336,
+            18.983999252319336
+          ],
+          "fonts": [
+            "ArialMT",
+            "Calibri",
+            "Calibri-Bold"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪\ne.g. Age=“20” and dob=“12 july 1990”",
+          "bbox": [
+            176.4199981689453,
+            393.5210266113281,
+            466.0527038574219,
+            413.1000061035156
+          ],
+          "font_sizes": [
+            17.040000915527344,
+            17.040000915527344
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "▪\ne.g. contradictions between duplicate records",
+          "bbox": [
+            176.4199981689453,
+            426.041015625,
+            518.6005249023438,
+            445.6199951171875
+          ],
+          "font_sizes": [
+            17.040000915527344,
+            17.040000915527344
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 18.959999084472656
+    },
+    {
+      "page": 10,
+      "text": "Need for data Pre-processing\n\n➢Unstructured Data (Text)\n\n•\nLower Case\n•\nNormalization (remove punctuation, special symbols, urls)\n•\nStopwords Removal (of, and, the,….)\n•\nStemming/Lemmatization (plays, playing, played →play)\n➢Unstructured Data (Images)\n\n• Read image\n• Resize image\n• Remove noise(Denoise)\n• Segmentation\n• Morphology(smoothing edges)",
+      "blocks": [
+        {
+          "text": "Need for data Pre-processing",
+          "bbox": [
+            103.37000274658203,
+            84.13017272949219,
+            551.8864135742188,
+            124.24785614013672
+          ],
+          "font_sizes": [
+            36.2400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.9
+        },
+        {
+          "text": "➢Unstructured Data (Text)",
+          "bbox": [
+            85.19999694824219,
+            154.3978729248047,
+            393.1892395019531,
+            182.7902374267578
+          ],
+          "font_sizes": [
+            25.464000701904297,
+            25.464000701904297
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "heading",
+          "level": 2,
+          "heading_confidence": 0.7
+        },
+        {
+          "text": "•\nLower Case\n•\nNormalization (remove punctuation, special symbols, urls)\n•\nStopwords Removal (of, and, the,….)\n•\nStemming/Lemmatization (plays, playing, played →play)\n➢Unstructured Data (Images)",
+          "bbox": [
+            85.19999694824219,
+            184.60240173339844,
+            617.96337890625,
+            309.1950378417969
+          ],
+          "font_sizes": [
+            19.920000076293945,
+            19.920000076293945,
+            19.920000076293945,
+            19.920000076293945,
+            19.920000076293945,
+            19.920000076293945,
+            19.944000244140625,
+            19.944000244140625,
+            25.440000534057617,
+            25.440000534057617
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "ArialMT",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "• Read image\n• Resize image\n• Remove noise(Denoise)\n• Segmentation\n• Morphology(smoothing edges)",
+          "bbox": [
+            102.23999786376953,
+            310.7637939453125,
+            367.215087890625,
+            429.2486267089844
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.06399917602539,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 20.040000915527344
+    },
+    {
+      "page": 11,
+      "text": "Pre- Processing in Structured Data\n\n➢Major data pre-processing tasks\n\n•\nData cleaning\n\n•\nData integration\n\n•\nData transformation\n\n•\nData reduction",
+      "blocks": [
+        {
+          "text": "Pre- Processing in Structured Data",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            731.9358520507812,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "➢Major data pre-processing tasks",
+          "bbox": [
+            85.87200164794922,
+            157.34237670898438,
+            478.41162109375,
+            188.54454040527344
+          ],
+          "font_sizes": [
+            27.983999252319336,
+            27.983999252319336
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.45
+        },
+        {
+          "text": "•\nData cleaning",
+          "bbox": [
+            144.42999267578125,
+            205.79998779296875,
+            313.0539855957031,
+            232.70399475097656
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "•\nData integration",
+          "bbox": [
+            144.42999267578125,
+            249.0,
+            335.7820129394531,
+            275.90399169921875
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "•\nData transformation",
+          "bbox": [
+            144.42999267578125,
+            292.2200012207031,
+            378.9820251464844,
+            319.1239929199219
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "•\nData reduction",
+          "bbox": [
+            144.42999267578125,
+            335.4200134277344,
+            322.4620056152344,
+            362.3240051269531
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 12,
+      "text": "Data Cleaning\n\n▪Data cleaning: It is a procedure to \"clean\" the data by filling in missing values,\n\nsmoothening noisy data, identifying or removing outliers, and resolving data\ninconsistencies.\n\n▪Data cleaning tasks\n\n• Fill missing values\n• Noise smoothening and outlier detection\n• Resolving inconsistencies",
+      "blocks": [
+        {
+          "text": "Data Cleaning",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            353.31378173828125,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Data cleaning: It is a procedure to \"clean\" the data by filling in missing values,",
+          "bbox": [
+            86.4000015258789,
+            150.5324249267578,
+            878.687255859375,
+            177.31918334960938
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "smoothening noisy data, identifying or removing outliers, and resolving data\ninconsistencies.",
+          "bbox": [
+            93.5999984741211,
+            179.56600952148438,
+            878.4039916992188,
+            234.9340057373047
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪Data cleaning tasks",
+          "bbox": [
+            86.4000015258789,
+            250.99241638183594,
+            283.8421630859375,
+            277.7791748046875
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "• Fill missing values\n• Noise smoothening and outlier detection\n• Resolving inconsistencies",
+          "bbox": [
+            144.97999572753906,
+            283.6600036621094,
+            561.0200805664062,
+            380.1691589355469
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 13,
+      "text": "Data Cleaning- Missing Values\n\nMissing values: data values are not available.\n\ni.e. many data entities have no data values corresponding to a certain feature like\nBMI value missing for some persons in a diabetes dataset.\n\n➢Probable reasons for missing values:\n\n• faulty measuring equipment\n\n• reluctance of person to share certain detail\n\n• negligence on part of data entry operator\n\n• feature unimportance at time of data collection",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            652.9157104492188,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Missing values: data values are not available.",
+          "bbox": [
+            99.6240005493164,
+            151.3246307373047,
+            546.0759887695312,
+            177.919189453125
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "i.e. many data entities have no data values corresponding to a certain feature like\nBMI value missing for some persons in a diabetes dataset.",
+          "bbox": [
+            93.5999984741211,
+            197.08599853515625,
+            878.572021484375,
+            255.33399963378906
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "➢Probable reasons for missing values:",
+          "bbox": [
+            86.4000015258789,
+            274.2040100097656,
+            465.30804443359375,
+            300.9639892578125
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "• faulty measuring equipment",
+          "bbox": [
+            144.97999572753906,
+            309.8199768066406,
+            440.8999938964844,
+            336.7239685058594
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "• reluctance of person to share certain detail",
+          "bbox": [
+            144.97999572753906,
+            347.478271484375,
+            578.1777954101562,
+            374.4091796875
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "• negligence on part of data entry operator",
+          "bbox": [
+            144.97999572753906,
+            385.1999816894531,
+            561.9800415039062,
+            412.1039733886719
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "• feature unimportance at time of data collection",
+          "bbox": [
+            144.97999572753906,
+            422.8800048828125,
+            620.4439697265625,
+            449.78399658203125
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 14,
+      "text": "Data Cleaning- Missing Values Contd…\n\n➢Missing data handling techniques\n\n•\nRemoving the data entity\n•\nManually filling the values\n•\nImputation (process used to determine and assign replacement values\nfor missing, invalid, or inconsistent data)\n\n“Technique selection is specific to user’s preference, dataset or feature\n\ntype or problem set”",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "➢Missing data handling techniques",
+          "bbox": [
+            86.4000015258789,
+            144.31625366210938,
+            497.1015625,
+            175.29454040527344
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            27.983999252319336
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "•\nRemoving the data entity\n•\nManually filling the values\n•\nImputation (process used to determine and assign replacement values\nfor missing, invalid, or inconsistent data)",
+          "bbox": [
+            144.97999572753906,
+            175.510009765625,
+            878.6439819335938,
+            283.5391845703125
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.02400016784668
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "“Technique selection is specific to user’s preference, dataset or feature",
+          "bbox": [
+            167.5399932861328,
+            318.3399963378906,
+            861.06787109375,
+            342.3399963378906
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "type or problem set”",
+          "bbox": [
+            410.0899963378906,
+            341.36199951171875,
+            613.3090209960938,
+            365.3860168457031
+          ],
+          "font_sizes": [
+            24.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 15,
+      "text": "Data Cleaning- Missing Values Contd…\n\n➢Sample dataset related to forest fires",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "➢Sample dataset related to forest fires",
+          "bbox": [
+            86.4000015258789,
+            147.45236206054688,
+            530.5308837890625,
+            178.65452575683594
+          ],
+          "font_sizes": [
+            27.983999252319336,
+            27.983999252319336
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 27.983999252319336
+    },
+    {
+      "page": 16,
+      "text": "Data Cleaning- Missing Values Contd…\n\nRemoving the data entity: Most easiest way directly to clean the data, but this is\nusually discouraged as it leads to loss of data, as you are removing the data entity\nor feature values that can add value to data set as well.\n\nMonth\nFFMC\nDC\ntemp\nRH\nwind\nmar\n86.2\n94.3\n8.2\n51\n6.7\noct\n90.6\n669.1\n18\n33\n0.9\nmar\n89.3\n102.2\n11.4\n99\n1.8\naug\n91.5\n608.2\n8\n86\n2.2\nsep\n92.5\n698.6\n22.8\n40\n4",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Removing the data entity: Most easiest way directly to clean the data, but this is\nusually discouraged as it leads to loss of data, as you are removing the data entity\nor feature values that can add value to data set as well.",
+          "bbox": [
+            86.4000015258789,
+            147.84461975097656,
+            878.6052856445312,
+            226.2939910888672
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Month\nFFMC\nDC\ntemp\nRH\nwind\nmar\n86.2\n94.3\n8.2\n51\n6.7\noct\n90.6\n669.1\n18\n33\n0.9\nmar\n89.3\n102.2\n11.4\n99\n1.8\naug\n91.5\n608.2\n8\n86\n2.2\nsep\n92.5\n698.6\n22.8\n40\n4",
+          "bbox": [
+            582.219970703125,
+            369.4237976074219,
+            878.1437377929688,
+            480.0203857421875
+          ],
+          "font_sizes": [
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027
+          ],
+          "fonts": [
+            "ArialMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 14.039999961853027
+    },
+    {
+      "page": 17,
+      "text": "Data Cleaning- Missing Values Contd…\n\n◦Manually filing up of values : This approach is time consuming, and not\nrecommended for huge data sets.\n\nMonth\nFFMC\nDC\ntemp\nRH\nwind\nmar\n86.2\n94.3\n8.2\n51\n6.7\noct\n90.6\n669.1\n18\n33\n0.9\noct\n90.6\n686.9\nNaN\n33\nNaN\nmar\nNaN\n77.5\n8.3\n97\n4\nmar\n89.3\n102.2\n11.4\n99\n1.8\naug\n92.3\nNaN\n22.2\nNaN\nNaN\naug\nNaN\n495.6\n24.1\n27\nNaN\naug\n91.5\n608.2\n8\n86\n2.2\nsep\n91\n692.6\nNaN\n63\n5.4\nsep\n92.5\n698.6\n22.8\n40\n4\n\nMonth\nFFMC\nDC\ntemp\nRH\nwind\nmar\n86.2\n94.3\n8.2\n51\n6.7\noct\n90.6\n669.1\n18\n33\n0.9\noct\n90.6\n686.9\n17\n33\n0.8\nmar\n91.6\n77.5\n8.3\n97\n4\nmar\n89.3\n102.2\n11.4\n99\n1.8\naug\n92.3\n380\n22.2\n92\n1.8\naug\n90\n495.6\n24.1\n27\n2\naug\n91.5\n608.2\n8\n86\n2.2\nsep\n91\n692.6\n22\n63\n5.4\nsep\n92.5\n698.6\n22.8\n40\n4",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "◦Manually filing up of values : This approach is time consuming, and not\nrecommended for huge data sets.",
+          "bbox": [
+            86.4000015258789,
+            147.84461975097656,
+            878.4586791992188,
+            200.37400817871094
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.0
+          ],
+          "fonts": [
+            "Calibri",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.55
+        },
+        {
+          "text": "Month\nFFMC\nDC\ntemp\nRH\nwind\nmar\n86.2\n94.3\n8.2\n51\n6.7\noct\n90.6\n669.1\n18\n33\n0.9\noct\n90.6\n686.9\nNaN\n33\nNaN\nmar\nNaN\n77.5\n8.3\n97\n4\nmar\n89.3\n102.2\n11.4\n99\n1.8\naug\n92.3\nNaN\n22.2\nNaN\nNaN\naug\nNaN\n495.6\n24.1\n27\nNaN\naug\n91.5\n608.2\n8\n86\n2.2\nsep\n91\n692.6\nNaN\n63\n5.4\nsep\n92.5\n698.6\n22.8\n40\n4",
+          "bbox": [
+            86.78399658203125,
+            217.5238037109375,
+            382.7037048339844,
+            423.0683898925781
+          ],
+          "font_sizes": [
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027
+          ],
+          "fonts": [
+            "ArialMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Month\nFFMC\nDC\ntemp\nRH\nwind\nmar\n86.2\n94.3\n8.2\n51\n6.7\noct\n90.6\n669.1\n18\n33\n0.9\noct\n90.6\n686.9\n17\n33\n0.8\nmar\n91.6\n77.5\n8.3\n97\n4\nmar\n89.3\n102.2\n11.4\n99\n1.8\naug\n92.3\n380\n22.2\n92\n1.8\naug\n90\n495.6\n24.1\n27\n2\naug\n91.5\n608.2\n8\n86\n2.2\nsep\n91\n692.6\n22\n63\n5.4\nsep\n92.5\n698.6\n22.8\n40\n4",
+          "bbox": [
+            573.1699829101562,
+            282.3721008300781,
+            869.0986938476562,
+            487.9403991699219
+          ],
+          "font_sizes": [
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027
+          ],
+          "fonts": [
+            "ArialMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 14.039999961853027
+    },
+    {
+      "page": 18,
+      "text": "Data Cleaning- Missing Values Contd…\n\n◦Imputation : process used to determine and assign replacement values for\nmissing, invalid, or inconsistent data. Various imputation methods include:\n➢Central Tendency Imputation\n➢Hot Deck Imputation\n➢Cold Deck Imputation\n➢Model Based Imputation\n\n➢Nearest Neighbor Imputation\n➢Tree-Based Imputation",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "◦Imputation : process used to determine and assign replacement values for\nmissing, invalid, or inconsistent data. Various imputation methods include:\n➢Central Tendency Imputation\n➢Hot Deck Imputation\n➢Cold Deck Imputation\n➢Model Based Imputation",
+          "bbox": [
+            86.4000015258789,
+            147.84461975097656,
+            878.4799194335938,
+            328.083984375
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "Calibri",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "➢Nearest Neighbor Imputation\n➢Tree-Based Imputation",
+          "bbox": [
+            100.81999969482422,
+            333.4440612792969,
+            362.05499267578125,
+            383.3938293457031
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.06399917602539
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.01200008392334
+    },
+    {
+      "page": 19,
+      "text": "Data Cleaning (Missing values)- Contd…\n\nCentral tendency Imputation : Replacing the missing value by central tendency\n(mean, median, mode) for a feature vector or belonging to same class of feature\nvector.\n\nMean\n\nMedian\n\nMode : Mode is the most frequent value corresponding to a certain feature in\na given data set\n\nUML 501: MACHINE LEARNING",
+      "blocks": [
+        {
+          "text": "Data Cleaning (Missing values)- Contd…",
+          "bbox": [
+            110.86000061035156,
+            81.66017150878906,
+            748.25,
+            121.7778549194336
+          ],
+          "font_sizes": [
+            36.2400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.9
+        },
+        {
+          "text": "Central tendency Imputation : Replacing the missing value by central tendency\n(mean, median, mode) for a feature vector or belonging to same class of feature\nvector.",
+          "bbox": [
+            142.5800018310547,
+            151.8374786376953,
+            817.5372314453125,
+            224.02865600585938
+          ],
+          "font_sizes": [
+            21.719999313354492,
+            21.719999313354492,
+            21.719999313354492,
+            21.719999313354492,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Mean",
+          "bbox": [
+            188.8800048828125,
+            241.61000061035156,
+            241.18174743652344,
+            263.3299865722656
+          ],
+          "font_sizes": [
+            21.719999313354492
+          ],
+          "fonts": [
+            "Calibri-Bold"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "Median",
+          "bbox": [
+            181.72999572753906,
+            330.2499694824219,
+            250.92990112304688,
+            351.969970703125
+          ],
+          "font_sizes": [
+            21.719999313354492
+          ],
+          "fonts": [
+            "Calibri-Bold"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "Mode : Mode is the most frequent value corresponding to a certain feature in\na given data set",
+          "bbox": [
+            142.33999633789062,
+            429.6634826660156,
+            816.8799438476562,
+            479.8675231933594
+          ],
+          "font_sizes": [
+            21.719999313354492,
+            21.719999313354492,
+            21.719999313354492
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "UML 501: MACHINE LEARNING",
+          "bbox": [
+            154.3000030517578,
+            516.2820434570312,
+            313.7147521972656,
+            529.0260009765625
+          ],
+          "font_sizes": [
+            12.744000434875488
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 20.06399917602539
+    },
+    {
+      "page": 20,
+      "text": "Data Cleaning- Missing Values Contd…\n\n◦Replacing Mean Value:\n\nMonth\nFFMC\nDC\ntemp\nRH\nwind\nmar\n86.2\n94.3\n8.2\n51\n6.7\noct\n90.6\n669.1\n18\n33\n0.9\noct\n90.6\n686.9\n15.3\n33\n3.57\nmar\n90.5\n77.5\n8.3\n97\n4\nmar\n89.3\n102.2\n11.4\n99\n1.8\naug\n92.3\n458.3\n22.2\n58.7\n3.57\naug\n90.5\n495.6\n24.1\n27\n3.57\n\naug\n91.5\n608.2\n8\n86\n2.2\n\n“\n\nsep\n91\n692.6\n15.3\n63\n5.4\nsep\n92.5\n698.6\n22.8\n40\n4",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "◦Replacing Mean Value:",
+          "bbox": [
+            86.4000015258789,
+            147.84461975097656,
+            325.6886901855469,
+            175.25599670410156
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Calibri",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Month\nFFMC\nDC\ntemp\nRH\nwind\nmar\n86.2\n94.3\n8.2\n51\n6.7\noct\n90.6\n669.1\n18\n33\n0.9\noct\n90.6\n686.9\n15.3\n33\n3.57\nmar\n90.5\n77.5\n8.3\n97\n4\nmar\n89.3\n102.2\n11.4\n99\n1.8\naug\n92.3\n458.3\n22.2\n58.7\n3.57\naug\n90.5\n495.6\n24.1\n27\n3.57",
+          "bbox": [
+            576.0999755859375,
+            221.0037841796875,
+            878.0237426757812,
+            368.1283874511719
+          ],
+          "font_sizes": [
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027
+          ],
+          "fonts": [
+            "ArialMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "aug\n91.5\n608.2\n8\n86\n2.2",
+          "bbox": [
+            583.9000244140625,
+            375.45208740234375,
+            873.448974609375,
+            391.1334228515625
+          ],
+          "font_sizes": [
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707,
+            14.064000129699707
+          ],
+          "fonts": [
+            "ArialMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "“",
+          "bbox": [
+            86.4000015258789,
+            405.9599914550781,
+            96.43199920654297,
+            429.9599914550781
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "sep\n91\n692.6\n15.3\n63\n5.4\nsep\n92.5\n698.6\n22.8\n40\n4",
+          "bbox": [
+            584.260009765625,
+            398.4837951660156,
+            873.4577026367188,
+            433.1283874511719
+          ],
+          "font_sizes": [
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027,
+            14.039999961853027
+          ],
+          "fonts": [
+            "ArialMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 14.039999961853027
+    },
+    {
+      "page": 21,
+      "text": "Data Cleaning- Missing Values Contd…\n\n◦“ Replacing by mean value: Not a suitable method if data set has many outliers”\n◦For example: weighs of humans\n67, 78, 900,-56,389,-1 etc.\n\nOutlier\nMean is 229.5\n\no Can be replaced with median in such cases.\no “Mode is a good option for missing values in case of categorical variables”",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "◦“ Replacing by mean value: Not a suitable method if data set has many outliers”\n◦For example: weighs of humans\n67, 78, 900,-56,389,-1 etc.",
+          "bbox": [
+            86.4000015258789,
+            150.63198852539062,
+            880.047607421875,
+            206.47000122070312
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.0,
+            24.0,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Outlier\nMean is 229.5",
+          "bbox": [
+            689.0900268554688,
+            192.70199584960938,
+            825.7940673828125,
+            245.54000854492188
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "o Can be replaced with median in such cases.\no “Mode is a good option for missing values in case of categorical variables”",
+          "bbox": [
+            86.4000015258789,
+            276.26800537109375,
+            830.4038696289062,
+            334.17999267578125
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Calibri",
+            "CourierNewPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 22,
+      "text": "Data Cleaning- Missing Values Contd…\n\nHot Deck \nImputation\n\n• Computes how many number of features (other than\nfeature with missing data) have same values in the\nentire\ntraining\nexamples\nand\nchoose\nit\nfor\nreplacement.\n• Used mostly in categorical data. (Clustering)\n\nCold Deck \nImputation\n\n• Similar to hot deck imputation.\n• In it missing observations are replaced by values\nfrom a source unrelated to the data set under\nconsideration. (Previous Study)",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Hot Deck \nImputation",
+          "bbox": [
+            117.55000305175781,
+            203.42623901367188,
+            252.9882354736328,
+            263.33935546875
+          ],
+          "font_sizes": [
+            27.983999252319336,
+            27.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "heading",
+          "level": 3,
+          "heading_confidence": 0.7
+        },
+        {
+          "text": "• Computes how many number of features (other than\nfeature with missing data) have same values in the\nentire\ntraining\nexamples\nand\nchoose\nit\nfor\nreplacement.\n• Used mostly in categorical data. (Clustering)",
+          "bbox": [
+            347.05999755859375,
+            168.55599975585938,
+            871.2940063476562,
+            298.583984375
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Cold Deck \nImputation",
+          "bbox": [
+            133.14999389648438,
+            354.0062561035156,
+            275.754638671875,
+            414.27935791015625
+          ],
+          "font_sizes": [
+            27.983999252319336,
+            27.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "heading",
+          "level": 3,
+          "heading_confidence": 0.7
+        },
+        {
+          "text": "• Similar to hot deck imputation.\n• In it missing observations are replaced by values\nfrom a source unrelated to the data set under\nconsideration. (Previous Study)",
+          "bbox": [
+            347.05999755859375,
+            332.4460144042969,
+            871.228515625,
+            437.64398193359375
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 23,
+      "text": "Data Cleaning- Missing Values Contd…\n\nNearest \nNeighbor-\n\n• Rely on distance metrics\n• evaluate the distance between recipients and donors.\n• Used after converting all features to numerical \n(quantitative)\n\nBased \nImputation",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Missing Values Contd…",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            808.3883056640625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Nearest \nNeighbor-",
+          "bbox": [
+            125.2300033569336,
+            243.84625244140625,
+            245.42068481445312,
+            303.7593688964844
+          ],
+          "font_sizes": [
+            27.983999252319336,
+            27.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "heading",
+          "level": 3,
+          "heading_confidence": 0.7
+        },
+        {
+          "text": "• Rely on distance metrics\n• evaluate the distance between recipients and donors.\n• Used after converting all features to numerical \n(quantitative)",
+          "bbox": [
+            347.05999755859375,
+            248.30599975585938,
+            868.146728515625,
+            357.6940002441406
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.02400016784668,
+            24.02400016784668,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Based \nImputation",
+          "bbox": [
+            117.55000305175781,
+            301.84765625,
+            253.02053833007812,
+            361.72454833984375
+          ],
+          "font_sizes": [
+            27.959999084472656,
+            27.983999252319336
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "heading",
+          "level": 3,
+          "heading_confidence": 0.7
+        }
+      ],
+      "body_font_size": 24.02400016784668
+    },
+    {
+      "page": 24,
+      "text": "Data Cleaning- Noisy Data\n\n▪Noise is defined as a random variance in a measured variable.\n\n▪For numeric values, boxplots and scatter plots can be used to identify outliers.\n\nBoxplot\nScatter plot",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Noisy Data",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            588.0833740234375,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Noise is defined as a random variance in a measured variable.",
+          "bbox": [
+            86.4000015258789,
+            145.1663818359375,
+            651.4855346679688,
+            169.6785430908203
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪For numeric values, boxplots and scatter plots can be used to identify outliers.",
+          "bbox": [
+            86.4000015258789,
+            180.36795043945312,
+            788.1819458007812,
+            204.8533477783203
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Boxplot\nScatter plot",
+          "bbox": [
+            274.7799987792969,
+            461.3940124511719,
+            697.56494140625,
+            484.5780029296875
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 21.971999168395996
+    },
+    {
+      "page": 25,
+      "text": "Data Cleaning- Noisy Data\n\n➢Major reasons of random variations in data are:\n\n• Malfunctioning of collection instruments.\n• Data entry lags.\n• Data transmission problems\n\nTo deal with these anomalous values, data smoothing techniques are applied,\nsome of the popular ones are\n\n• Binning method\n• Regression\n• Outlier analysis",
+      "blocks": [
+        {
+          "text": "Data Cleaning- Noisy Data",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            577.7582397460938,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "➢Major reasons of random variations in data are:",
+          "bbox": [
+            86.4000015258789,
+            150.5324249267578,
+            568.4686279296875,
+            177.31918334960938
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "• Malfunctioning of collection instruments.\n• Data entry lags.\n• Data transmission problems",
+          "bbox": [
+            144.97999572753906,
+            183.19000244140625,
+            571.6300048828125,
+            279.6991882324219
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "To deal with these anomalous values, data smoothing techniques are applied,\nsome of the popular ones are",
+          "bbox": [
+            93.5999984741211,
+            298.0359802246094,
+            878.5,
+            353.40399169921875
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "• Binning method\n• Regression\n• Outlier analysis",
+          "bbox": [
+            144.97999572753906,
+            359.2382507324219,
+            327.11578369140625,
+            455.78399658203125
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 26,
+      "text": "Binning Method for Noisy Data\n\nBinning method : performs the task of data smoothening.\n\nSteps to be followed under binning method are:\n\nStep 1: Sort the data into ascending order.\n\nStep 2: Calculate the bin size (i.e. number of bins)\n\nStep 3: Partition or distribute the data equally among the bins starting with first\nelement of sorted data.\n\nStep 4: perform data smoothening using bin means, bin boundaries, and bin\nmedian.\n\nLast bin can have one less or more element!!",
+      "blocks": [
+        {
+          "text": "Binning Method for Noisy Data",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            671.6168212890625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Binning method : performs the task of data smoothening.",
+          "bbox": [
+            93.5999984741211,
+            150.72462463378906,
+            647.6080322265625,
+            177.31918334960938
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Steps to be followed under binning method are:",
+          "bbox": [
+            93.5999984741211,
+            193.60598754882812,
+            579.0220336914062,
+            220.1739959716797
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "Step 1: Sort the data into ascending order.",
+          "bbox": [
+            93.5999984741211,
+            236.32598876953125,
+            494.57000732421875,
+            262.89398193359375
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Step 2: Calculate the bin size (i.e. number of bins)",
+          "bbox": [
+            93.5999984741211,
+            279.1960144042969,
+            574.8699951171875,
+            305.7640075683594
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Step 3: Partition or distribute the data equally among the bins starting with first\nelement of sorted data.",
+          "bbox": [
+            93.5999984741211,
+            322.0359802246094,
+            878.5239868164062,
+            377.4091796875
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Step 4: perform data smoothening using bin means, bin boundaries, and bin\nmedian.",
+          "bbox": [
+            93.5999984741211,
+            393.57598876953125,
+            878.4520263671875,
+            448.9440002441406
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Last bin can have one less or more element!!",
+          "bbox": [
+            270.8599853515625,
+            465.239990234375,
+            707.0120849609375,
+            491.8079833984375
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 27,
+      "text": "Binning Method for Noisy Data\n\nExample : 9, 21, 29, 28, 4, 21, 8, 24, 26\n\nStep1: sorted the data 4, 8, 9, 21, 21, 24, 26, 28, 29\n\nStep 2 :  Bin size calculation\n\n𝑀𝑎𝑥𝑣𝑎𝑙𝑢𝑒−𝑀𝑖𝑛𝑣𝑎𝑙𝑢𝑒\n\n𝑑𝑎𝑡𝑎𝑠𝑖𝑧𝑒\nBin size =\n\n=\n29-4 = 2.777 \n9\n\nBut we need to take ceiling value, so bin size is 3 here",
+      "blocks": [
+        {
+          "text": "Binning Method for Noisy Data",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            671.6168212890625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Example : 9, 21, 29, 28, 4, 21, 8, 24, 26",
+          "bbox": [
+            93.5999984741211,
+            150.72462463378906,
+            480.223876953125,
+            177.31918334960938
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "Step1: sorted the data 4, 8, 9, 21, 21, 24, 26, 28, 29",
+          "bbox": [
+            114.4800033569336,
+            195.2659912109375,
+            603.4080200195312,
+            221.83399963378906
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Step 2 :  Bin size calculation",
+          "bbox": [
+            114.4800033569336,
+            233.06600952148438,
+            394.8479919433594,
+            259.6340026855469
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "𝑀𝑎𝑥𝑣𝑎𝑙𝑢𝑒−𝑀𝑖𝑛𝑣𝑎𝑙𝑢𝑒",
+          "bbox": [
+            335.739990234375,
+            284.6231384277344,
+            563.7203979492188,
+            306.6051025390625
+          ],
+          "font_sizes": [
+            21.959999084472656
+          ],
+          "fonts": [
+            "CambriaMath"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "𝑑𝑎𝑡𝑎𝑠𝑖𝑧𝑒\nBin size =",
+          "bbox": [
+            211.97000122070312,
+            295.9636535644531,
+            494.76788330078125,
+            337.9304504394531
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            21.959999084472656
+          ],
+          "fonts": [
+            "CambriaMath",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "=\n29-4 = 2.777 \n9",
+          "bbox": [
+            289.489990234375,
+            362.8736572265625,
+            530.2991333007812,
+            413.5833435058594
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "But we need to take ceiling value, so bin size is 3 here",
+          "bbox": [
+            170.86000061035156,
+            456.9776611328125,
+            647.4139404296875,
+            481.287353515625
+          ],
+          "font_sizes": [
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 21.971999168395996
+    },
+    {
+      "page": 28,
+      "text": "Binning Method for Noisy Data\n\n▪Step 3 : Bin partitioning (equi-size bins)\n\nBin 1:  4, 8, 9\nBin 2: 21, 21, 24\nBin 3:  26, 28, 29\n\nStep 4 : data smoothening\n\n➢Using mean value : replace the bin values by bin average\n\nBin 1:  7, 7, 7\nBin 2: 22, 22, 22\nBin 3:  27, 27, 27",
+      "blocks": [
+        {
+          "text": "Binning Method for Noisy Data",
+          "bbox": [
+            93.5999984741211,
+            79.15061950683594,
+            693.5158081054688,
+            132.3131866455078
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Step 3 : Bin partitioning (equi-size bins)",
+          "bbox": [
+            86.4000015258789,
+            146.49600219726562,
+            508.2220153808594,
+            177.054931640625
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Bin 1:  4, 8, 9\nBin 2: 21, 21, 24\nBin 3:  26, 28, 29",
+          "bbox": [
+            103.58000183105469,
+            208.072265625,
+            264.98370361328125,
+            285.23333740234375
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            21.983999252319336,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "Step 4 : data smoothening",
+          "bbox": [
+            103.58000183105469,
+            307.5559997558594,
+            352.65203857421875,
+            334.1239929199219
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "➢Using mean value : replace the bin values by bin average",
+          "bbox": [
+            70.55999755859375,
+            343.8724365234375,
+            650.9049072265625,
+            370.6591796875
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Bin 1:  7, 7, 7\nBin 2: 22, 22, 22\nBin 3:  27, 27, 27",
+          "bbox": [
+            103.58000183105469,
+            392.63226318359375,
+            264.98370361328125,
+            469.7913513183594
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            21.983999252319336,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        }
+      ],
+      "body_font_size": 21.983999252319336
+    },
+    {
+      "page": 29,
+      "text": "Binning Method for Noisy Data\n\n▪➢Using boundary values : replace the bin value by a closest boundary\n\nvalue of the corresponding bin.\n\n“Boundary values remain unchanged in\n\nboundary method”\n\nBin 1:  4, 9, 9\nBin 2: 21, 21, 24\nBin 3:  26, 29, 29\n\n➢Using median values : replace the bin value by a bin median.\n\nBin 1:  8, 8, 8\nBin 2: 21, 21, 21\nBin 3:  28, 28, 28",
+      "blocks": [
+        {
+          "text": "Binning Method for Noisy Data",
+          "bbox": [
+            93.5999984741211,
+            79.15061950683594,
+            693.5158081054688,
+            132.3131866455078
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪➢Using boundary values : replace the bin value by a closest boundary",
+          "bbox": [
+            86.4000015258789,
+            150.5324249267578,
+            795.0828247070312,
+            177.31918334960938
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "value of the corresponding bin.",
+          "bbox": [
+            135.72000122070312,
+            179.56600952148438,
+            440.61602783203125,
+            206.13401794433594
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "“Boundary values remain unchanged in",
+          "bbox": [
+            429.7699890136719,
+            224.0136260986328,
+            783.1500244140625,
+            248.32334899902344
+          ],
+          "font_sizes": [
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "boundary method”",
+          "bbox": [
+            521.6900024414062,
+            250.4136505126953,
+            685.81884765625,
+            274.7233581542969
+          ],
+          "font_sizes": [
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Bin 1:  4, 9, 9\nBin 2: 21, 21, 24\nBin 3:  26, 29, 29",
+          "bbox": [
+            154.0800018310547,
+            224.0136260986328,
+            315.49798583984375,
+            301.1285400390625
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.983999252319336,
+            21.983999252319336
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "➢Using median values : replace the bin value by a bin median.",
+          "bbox": [
+            108.72000122070312,
+            335.4524230957031,
+            725.9896850585938,
+            362.2391662597656
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Bin 1:  8, 8, 8\nBin 2: 21, 21, 21\nBin 3:  28, 28, 28",
+          "bbox": [
+            159.0,
+            372.6922607421875,
+            320.40374755859375,
+            449.84735107421875
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            21.983999252319336,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        }
+      ],
+      "body_font_size": 21.983999252319336
+    },
+    {
+      "page": 30,
+      "text": "Outlier Analysis\n\n▪An outlier is an object that deviates significantly from the rest of the objects.\n▪They can be caused by measurement or execution error.\n▪The analysis of outlier data is referred to as outlier analysis or outlier mining.",
+      "blocks": [
+        {
+          "text": "Outlier Analysis",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            384.33734130859375,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪An outlier is an object that deviates significantly from the rest of the objects.\n▪They can be caused by measurement or execution error.\n▪The analysis of outlier data is referred to as outlier analysis or outlier mining.",
+          "bbox": [
+            86.4000015258789,
+            140.35398864746094,
+            842.6199951171875,
+            229.6540069580078
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 31,
+      "text": "Outlier Analysis\n\n▪Types of Outliers:\n\n➢Univariate: A univariate outlier is a data point that consists of an extreme\n\nvalue on one variable.\n➢Multivariate: A multivariate outlier is a combination of unusual scores on at\n\nleast two variables.\n\n▪Outlier Detection and Handling Methods\n\n➢Extreme Value Analysis\n➢Linear Models\n➢Proximity-based Methods\n➢Information Theoretic Methods",
+      "blocks": [
+        {
+          "text": "Outlier Analysis",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            384.33734130859375,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Types of Outliers:",
+          "bbox": [
+            86.4000015258789,
+            147.6524200439453,
+            276.21868896484375,
+            174.43917846679688
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "➢Univariate: A univariate outlier is a data point that consists of an extreme",
+          "bbox": [
+            102.26000213623047,
+            177.57398986816406,
+            878.3560180664062,
+            204.33399963378906
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "value on one variable.\n➢Multivariate: A multivariate outlier is a combination of unusual scores on at",
+          "bbox": [
+            102.26000213623047,
+            203.68600463867188,
+            878.4519653320312,
+            262.1739807128906
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "least two variables.",
+          "bbox": [
+            116.66000366210938,
+            261.5046081542969,
+            301.34600830078125,
+            288.09918212890625
+          ],
+          "font_sizes": [
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "▪Outlier Detection and Handling Methods",
+          "bbox": [
+            86.4000015258789,
+            303.364013671875,
+            496.4419860839844,
+            330.1239929199219
+          ],
+          "font_sizes": [
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "➢Extreme Value Analysis\n➢Linear Models\n➢Proximity-based Methods\n➢Information Theoretic Methods",
+          "bbox": [
+            102.26000213623047,
+            333.3979797363281,
+            402.5037536621094,
+            447.183349609375
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 32,
+      "text": "Extreme Value Analysis- Outlier Analysis\n\n▪Numeric Outlier\n\n▪This is the simplest, nonparametric outlier\n\nAssume the data 6, 2, 1, 5, 4, 3, 50. If these\nvalues represent the number of chapatis eaten\nin lunch, then 50 is clearly an outlier.\n\ndetection method in a one dimensional feature\nspace.\n\nSorted Values: 1, 2, 3, 4, 5, 6, 50\n\n▪Here outliers are calculated by means of\n\nQ1 25 percentile of the given data is, 2\n\nthe IQR (InterQuartile Range).\n\nQ2 50 percentile of the given data is, 4.0\n\n▪The first and the third quartile (Q1, Q3) are\n\nQ3 75 percentile of the given data is, 6\n\ncalculated.\n\nIQR= 6-2=4, k=1.5\n\n▪An outlier is then a data point xi that lies\n\noutside the interquartile range. That is:\n\nRange: 6-1.5 X 4=0 and 6+1.5X4=12\n\n𝑥𝑖> 𝑄3 + 𝑘𝐼𝑄𝑅𝑎𝑛𝑑𝑥𝑖< 𝑄1 −𝑘𝐼𝑄𝑅\n\n50 is Outlier\n\nwhere  IQR=Q3-Q1 and k >=0\n\nAs data is no. of chapatis eaten in a day so min value should be zero.",
+      "blocks": [
+        {
+          "text": "Extreme Value Analysis- Outlier Analysis",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            840.09521484375,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Numeric Outlier",
+          "bbox": [
+            86.4000015258789,
+            141.94723510742188,
+            258.2016906738281,
+            168.17959594726562
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "Open Sans,Bold"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "▪This is the simplest, nonparametric outlier",
+          "bbox": [
+            86.4000015258789,
+            178.73403930664062,
+            475.3338317871094,
+            201.07864379882812
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Assume the data 6, 2, 1, 5, 4, 3, 50. If these\nvalues represent the number of chapatis eaten\nin lunch, then 50 is clearly an outlier.",
+          "bbox": [
+            496.8500061035156,
+            145.6343536376953,
+            878.6143798828125,
+            206.2386474609375
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "detection method in a one dimensional feature\nspace.",
+          "bbox": [
+            93.5999984741211,
+            198.09437561035156,
+            475.28070068359375,
+            239.4786376953125
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Sorted Values: 1, 2, 3, 4, 5, 6, 50",
+          "bbox": [
+            496.8500061035156,
+            217.2943572998047,
+            757.6000366210938,
+            239.4786376953125
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "▪Here outliers are calculated by means of",
+          "bbox": [
+            86.4000015258789,
+            250.23245239257812,
+            475.331298828125,
+            272.60382080078125
+          ],
+          "font_sizes": [
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Q1 25 percentile of the given data is, 2",
+          "bbox": [
+            496.8500061035156,
+            250.39297485351562,
+            806.9320068359375,
+            272.60382080078125
+          ],
+          "font_sizes": [
+            20.06399917602539
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "the IQR (InterQuartile Range).",
+          "bbox": [
+            93.5999984741211,
+            269.64434814453125,
+            339.02001953125,
+            291.8286437988281
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPS-ItalicMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "Q2 50 percentile of the given data is, 4.0",
+          "bbox": [
+            496.8500061035156,
+            283.684326171875,
+            822.0400390625,
+            305.8686218261719
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "▪The first and the third quartile (Q1, Q3) are",
+          "bbox": [
+            86.4000015258789,
+            302.7240295410156,
+            475.3588562011719,
+            325.0686340332031
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344,
+            20.040000915527344
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-ItalicMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Q3 75 percentile of the given data is, 6",
+          "bbox": [
+            496.8500061035156,
+            316.9243469238281,
+            806.9200439453125,
+            339.108642578125
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "calculated.",
+          "bbox": [
+            93.5999984741211,
+            322.0843505859375,
+            179.75,
+            344.2686462402344
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "IQR= 6-2=4, k=1.5",
+          "bbox": [
+            496.8500061035156,
+            350.0229797363281,
+            651.9819946289062,
+            372.23382568359375
+          ],
+          "font_sizes": [
+            20.06399917602539
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "▪An outlier is then a data point xi that lies",
+          "bbox": [
+            86.4000015258789,
+            355.1424560546875,
+            475.27850341796875,
+            382.433837890625
+          ],
+          "font_sizes": [
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            20.06399917602539,
+            13.343999862670898,
+            20.06399917602539,
+            20.06399917602539
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "outside the interquartile range. That is:",
+          "bbox": [
+            93.5999984741211,
+            374.5443420410156,
+            402.58111572265625,
+            396.7286376953125
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Range: 6-1.5 X 4=0 and 6+1.5X4=12",
+          "bbox": [
+            496.8500061035156,
+            383.3043518066406,
+            797.2000122070312,
+            405.4886474609375
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "𝑥𝑖> 𝑄3 + 𝑘𝐼𝑄𝑅𝑎𝑛𝑑𝑥𝑖< 𝑄1 −𝑘𝐼𝑄𝑅",
+          "bbox": [
+            105.62000274658203,
+            412.308837890625,
+            445.5576477050781,
+            436.4488830566406
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            14.640000343322754,
+            20.040000915527344,
+            14.640000343322754,
+            20.040000915527344,
+            14.640000343322754,
+            20.040000915527344,
+            14.640000343322754,
+            20.040000915527344
+          ],
+          "fonts": [
+            "CambriaMath"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "50 is Outlier",
+          "bbox": [
+            496.8500061035156,
+            416.5443420410156,
+            596.783203125,
+            438.7286376953125
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.45
+        },
+        {
+          "text": "where  IQR=Q3-Q1 and k >=0",
+          "bbox": [
+            161.05999755859375,
+            431.6643371582031,
+            407.8609619140625,
+            453.8486328125
+          ],
+          "font_sizes": [
+            20.040000915527344
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "As data is no. of chapatis eaten in a day so min value should be zero.",
+          "bbox": [
+            87.66673278808594,
+            472.10089111328125,
+            825.484375,
+            496.1008605957031
+          ],
+          "font_sizes": [
+            23.999996185302734
+          ],
+          "fonts": [
+            "Helvetica"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        }
+      ],
+      "body_font_size": 20.040000915527344
+    },
+    {
+      "page": 33,
+      "text": "Extreme Value Analysis- Outlier Analysis\n\n▪Z-score is a parametric outlier detection method in a one or low dimensional feature\n\nspace.\n▪This technique assumes a Gaussian distribution of the data.\n▪The outliers are the data points that are in the tails of the distribution and therefore far\n\nfrom the mean.\n▪How far depends on a set threshold zthr for the normalized data points zi calculated with\n\nthe formula:\n\n𝑧𝑖= 𝑥𝑖−𝜇\n\n𝜎\nwhere xi is a data point, μ is the mean of all xi and is the standard deviation of all xi.\n\nAn outlier is then a normalized data point which has an absolute value greater than zthr.\n\n𝑧𝑖> 𝑧𝑡ℎ𝑟\n\nCommonly used zthr values are 2.5, 3.0 and 3.5.",
+      "blocks": [
+        {
+          "text": "Extreme Value Analysis- Outlier Analysis",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            840.09521484375,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Z-score is a parametric outlier detection method in a one or low dimensional feature",
+          "bbox": [
+            86.4000015258789,
+            150.44638061523438,
+            878.3936157226562,
+            174.9585418701172
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336,
+            21.983999252319336
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "space.\n▪This technique assumes a Gaussian distribution of the data.\n▪The outliers are the data points that are in the tails of the distribution and therefore far",
+          "bbox": [
+            86.4000015258789,
+            177.0636444091797,
+            878.3956298828125,
+            254.17335510253906
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "from the mean.\n▪How far depends on a set threshold zthr for the normalized data points zi calculated with",
+          "bbox": [
+            86.4000015258789,
+            256.24224853515625,
+            878.5447998046875,
+            313.48333740234375
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            21.959999084472656,
+            21.959999084472656,
+            14.640000343322754,
+            21.959999084472656,
+            14.640000343322754,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "the formula:",
+          "bbox": [
+            93.5999984741211,
+            309.0936584472656,
+            201.60487365722656,
+            333.4033508300781
+          ],
+          "font_sizes": [
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "𝑧𝑖= 𝑥𝑖−𝜇",
+          "bbox": [
+            481.9700012207031,
+            332.5736999511719,
+            564.857666015625,
+            365.94976806640625
+          ],
+          "font_sizes": [
+            21.983999252319336,
+            16.079999923706055,
+            21.983999252319336,
+            16.079999923706055,
+            13.199999809265137,
+            16.079999923706055
+          ],
+          "fonts": [
+            "CambriaMath"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "𝜎\nwhere xi is a data point, μ is the mean of all xi and is the standard deviation of all xi.",
+          "bbox": [
+            86.4000015258789,
+            356.4349670410156,
+            824.1099853515625,
+            401.5833435058594
+          ],
+          "font_sizes": [
+            16.104000091552734,
+            21.959999084472656,
+            14.640000343322754,
+            21.959999084472656,
+            14.640000343322754,
+            21.959999084472656,
+            14.640000343322754,
+            21.959999084472656
+          ],
+          "fonts": [
+            "CambriaMath",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "An outlier is then a normalized data point which has an absolute value greater than zthr.",
+          "bbox": [
+            100.22000122070312,
+            397.19366455078125,
+            870.1900024414062,
+            426.4022216796875
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            14.640000343322754,
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "𝑧𝑖> 𝑧𝑡ℎ𝑟",
+          "bbox": [
+            438.4100036621094,
+            426.05316162109375,
+            531.7933349609375,
+            451.1697692871094
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            16.079999923706055,
+            21.959999084472656,
+            21.959999084472656,
+            16.079999923706055
+          ],
+          "fonts": [
+            "CambriaMath"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Commonly used zthr values are 2.5, 3.0 and 3.5.",
+          "bbox": [
+            273.5,
+            476.41766357421875,
+            691.0805053710938,
+            507.20733642578125
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            14.640000343322754,
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 21.959999084472656
+    },
+    {
+      "page": 34,
+      "text": "Outlier Analysis\n\n• Linear Models:\n➢Projection methods that model the data into lower dimensions using linear\n\ncorrelations.\n➢For example, principle component analysis and data with large residual errors may be\n\noutliers.\n\n•Proximity-based Models:\n➢Data instances that are isolated from the mass of the data as determined by cluster,\n\ndensity or nearest neighbor analysis.\n\n•Information Theoretic Models:\n➢Outliers are detected as data instances that increase the complexity (minimum code\n\nlength) of the dataset.",
+      "blocks": [
+        {
+          "text": "Outlier Analysis",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            384.33734130859375,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "• Linear Models:\n➢Projection methods that model the data into lower dimensions using linear",
+          "bbox": [
+            86.4000015258789,
+            144.62828063964844,
+            878.2886962890625,
+            196.69337463378906
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "ArialMT",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "correlations.\n➢For example, principle component analysis and data with large residual errors may be",
+          "bbox": [
+            102.26000213623047,
+            193.50364685058594,
+            878.6502075195312,
+            244.93336486816406
+          ],
+          "font_sizes": [
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "outliers.",
+          "bbox": [
+            116.66000366210938,
+            241.72225952148438,
+            188.156005859375,
+            266.05853271484375
+          ],
+          "font_sizes": [
+            21.983999252319336
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "•Proximity-based Models:\n➢Data instances that are isolated from the mass of the data as determined by cluster,",
+          "bbox": [
+            86.4000015258789,
+            278.2599792480469,
+            878.4710083007812,
+            330.2833251953125
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "ArialMT",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "density or nearest neighbor analysis.",
+          "bbox": [
+            116.66000366210938,
+            327.0936584472656,
+            437.41998291015625,
+            351.4033508300781
+          ],
+          "font_sizes": [
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "•Information Theoretic Models:\n➢Outliers are detected as data instances that increase the complexity (minimum code",
+          "bbox": [
+            86.4000015258789,
+            363.4800109863281,
+            878.5062866210938,
+            415.62335205078125
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656,
+            21.959999084472656
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "ArialMT",
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "length) of the dataset.",
+          "bbox": [
+            116.66000366210938,
+            412.43365478515625,
+            307.19000244140625,
+            436.74334716796875
+          ],
+          "font_sizes": [
+            21.959999084472656
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 21.959999084472656
+    },
+    {
+      "page": 35,
+      "text": "Regression for Noisy Data\n\n▪Regression method : Linear regression and multiple linear regression can\n\nbe used to smoothen the data, where the values are conformed to a\nfunction.",
+      "blocks": [
+        {
+          "text": "Regression for Noisy Data",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            571.6309814453125,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "▪Regression method : Linear regression and multiple linear regression can",
+          "bbox": [
+            86.4000015258789,
+            144.8900146484375,
+            815.0859375,
+            169.39820861816406
+          ],
+          "font_sizes": [
+            20.040000915527344,
+            24.0,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "be used to smoothen the data, where the values are conformed to a\nfunction.",
+          "bbox": [
+            103.80000305175781,
+            173.69000244140625,
+            815.2059936523438,
+            226.49598693847656
+          ],
+          "font_sizes": [
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.0,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 36,
+      "text": "Data Cleaning – Inconsistent Data\n\nInconsistent Data: discrepancies between different data items.\n\ne.g. the “Address” field contains the “Phone number”\n\nTo resolve inconsistencies\n\n➢Manual correction using external references\n\n➢\nSemi-automatic tools\n\n•\nTo detect violation of known functional dependencies and data \nconstraints\n\n•\nTo correct redundant data\n\nTo avoid inconsistencies, perform data assessment like\n\nknowing what the data type of the features should be and whether it is the same\n\nfor all the data objects.”",
+      "blocks": [
+        {
+          "text": "Data Cleaning – Inconsistent Data",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            732.361572265625,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Inconsistent Data: discrepancies between different data items.",
+          "bbox": [
+            93.5999984741211,
+            150.72462463378906,
+            698.7160034179688,
+            177.31918334960938
+          ],
+          "font_sizes": [
+            24.02400016784668,
+            24.02400016784668,
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.0
+        },
+        {
+          "text": "e.g. the “Address” field contains the “Phone number”",
+          "bbox": [
+            93.5999984741211,
+            193.60598754882812,
+            606.9819946289062,
+            220.1739959716797
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "To resolve inconsistencies",
+          "bbox": [
+            94.91999816894531,
+            232.36599731445312,
+            355.4160461425781,
+            258.9339904785156
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPS-BoldMT"
+          ],
+          "is_bold": true,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.35
+        },
+        {
+          "text": "➢Manual correction using external references",
+          "bbox": [
+            94.91999816894531,
+            261.14459228515625,
+            544.1138916015625,
+            287.7391662597656
+          ],
+          "font_sizes": [
+            10.824000358581543,
+            24.02400016784668
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "➢\nSemi-automatic tools",
+          "bbox": [
+            94.91999816894531,
+            289.2760009765625,
+            332.3479919433594,
+            315.843994140625
+          ],
+          "font_sizes": [
+            10.800000190734863,
+            24.0
+          ],
+          "fonts": [
+            "Wingdings-Regular",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "•\nTo detect violation of known functional dependencies and data \nconstraints",
+          "bbox": [
+            131.77999877929688,
+            316.5159912109375,
+            775.1481323242188,
+            363.2491760253906
+          ],
+          "font_sizes": [
+            18.0,
+            24.0,
+            24.02400016784668
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "•\nTo correct redundant data",
+          "bbox": [
+            131.77999877929688,
+            363.8160095214844,
+            413.01202392578125,
+            390.3840026855469
+          ],
+          "font_sizes": [
+            18.0,
+            24.0
+          ],
+          "fonts": [
+            "ArialMT",
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "To avoid inconsistencies, perform data assessment like",
+          "bbox": [
+            223.33999633789062,
+            404.0159912109375,
+            748.340087890625,
+            430.583984375
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "knowing what the data type of the features should be and whether it is the same",
+          "bbox": [
+            107.77999877929688,
+            446.8345947265625,
+            876.0673828125,
+            473.4291687011719
+          ],
+          "font_sizes": [
+            24.02400016784668
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "for all the data objects.”",
+          "bbox": [
+            371.0899963378906,
+            475.67999267578125,
+            600.7460327148438,
+            502.24798583984375
+          ],
+          "font_sizes": [
+            24.0
+          ],
+          "fonts": [
+            "TimesNewRomanPSMT"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 24.0
+    },
+    {
+      "page": 37,
+      "text": "Data Cleaning-Summary\n\nData Cleaning\n\nMissing Data\n\nNoise/Outlier Analysis\n\nData Inconsistencies\n\nAssign value\n\nRegression\n\nRemove \nExamples\n\nmanually\nImputation\n\nBinning\nOutlier \nAnalysis\n\nData \nConstraints\n\nData \nRedundancy\n\nExtreme\n\nProximity-\n\nInformation\n\nCentral \nTendency\n\nHot Deck \nImputation\n\nCold Deck \nImputation\n\nNearest \nNeighbor\n\nLinear \nModels\n\nBased\n\nTheoritic\n\nValue \nAnalysis",
+      "blocks": [
+        {
+          "text": "Data Cleaning-Summary",
+          "bbox": [
+            93.5999984741211,
+            84.53199005126953,
+            547.1240844726562,
+            132.5559844970703
+          ],
+          "font_sizes": [
+            48.02399826049805
+          ],
+          "fonts": [
+            "Calibri-Light"
+          ],
+          "is_bold": false,
+          "type": "heading",
+          "level": 1,
+          "heading_confidence": 0.65
+        },
+        {
+          "text": "Data Cleaning",
+          "bbox": [
+            480.260009765625,
+            212.05999755859375,
+            547.5438842773438,
+            224.05999755859375
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Missing Data",
+          "bbox": [
+            174.6999969482422,
+            262.29998779296875,
+            237.29202270507812,
+            274.29998779296875
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Noise/Outlier Analysis",
+          "bbox": [
+            549.77001953125,
+            262.29998779296875,
+            657.7100830078125,
+            274.29998779296875
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Data Inconsistencies",
+          "bbox": [
+            753.0499877929688,
+            262.29998779296875,
+            852.1099853515625,
+            274.29998779296875
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Assign value",
+          "bbox": [
+            176.02000427246094,
+            305.92999267578125,
+            238.5640106201172,
+            317.92999267578125
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Regression",
+          "bbox": [
+            656.9299926757812,
+            312.5,
+            709.657958984375,
+            324.5
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Remove \nExamples",
+          "bbox": [
+            103.41999816894531,
+            305.92999267578125,
+            149.3560028076172,
+            331.1300048828125
+          ],
+          "font_sizes": [
+            12.0,
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "manually\nImputation",
+          "bbox": [
+            183.5800018310547,
+            312.5,
+            312.6879577636719,
+            331.1300048828125
+          ],
+          "font_sizes": [
+            12.0,
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Binning\nOutlier \nAnalysis",
+          "bbox": [
+            505.8699951171875,
+            305.92999267578125,
+            623.4859619140625,
+            331.1300048828125
+          ],
+          "font_sizes": [
+            12.0,
+            12.0,
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Data \nConstraints",
+          "bbox": [
+            735.2899780273438,
+            305.92999267578125,
+            790.4658813476562,
+            331.1300048828125
+          ],
+          "font_sizes": [
+            12.0,
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Data \nRedundancy",
+          "bbox": [
+            812.280029296875,
+            305.92999267578125,
+            872.495849609375,
+            331.1300048828125
+          ],
+          "font_sizes": [
+            12.0,
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Extreme",
+          "bbox": [
+            464.0400085449219,
+            349.55999755859375,
+            507.5280456542969,
+            361.55999755859375
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Proximity-",
+          "bbox": [
+            618.5999755859375,
+            356.1400146484375,
+            668.3519897460938,
+            368.1400146484375
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Information",
+          "bbox": [
+            694.0599975585938,
+            356.1400146484375,
+            754.8158569335938,
+            368.1400146484375
+          ],
+          "font_sizes": [
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Central \nTendency",
+          "bbox": [
+            143.08999633789062,
+            356.1400146484375,
+            189.41847229003906,
+            381.34600830078125
+          ],
+          "font_sizes": [
+            12.0,
+            12.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Hot Deck \nImputation",
+          "bbox": [
+            218.5399932861328,
+            356.1400146484375,
+            272.91253662109375,
+            381.34600830078125
+          ],
+          "font_sizes": [
+            12.0,
+            12.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Cold Deck \nImputation",
+          "bbox": [
+            298.1000061035156,
+            356.1400146484375,
+            355.2380676269531,
+            381.34600830078125
+          ],
+          "font_sizes": [
+            12.0,
+            12.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Nearest \nNeighbor",
+          "bbox": [
+            382.1000061035156,
+            356.1400146484375,
+            427.52667236328125,
+            381.34600830078125
+          ],
+          "font_sizes": [
+            12.0,
+            12.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Linear \nModels",
+          "bbox": [
+            545.760009765625,
+            356.1400146484375,
+            582.2288208007812,
+            381.34600830078125
+          ],
+          "font_sizes": [
+            12.0,
+            12.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Based",
+          "bbox": [
+            628.9199829101562,
+            369.3219909667969,
+            658.1624145507812,
+            381.34600830078125
+          ],
+          "font_sizes": [
+            12.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Theoritic",
+          "bbox": [
+            701.3800048828125,
+            369.3219909667969,
+            744.8347778320312,
+            381.34600830078125
+          ],
+          "font_sizes": [
+            12.02400016784668
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        },
+        {
+          "text": "Value \nAnalysis",
+          "bbox": [
+            464.760009765625,
+            362.760009765625,
+            504.011962890625,
+            387.96002197265625
+          ],
+          "font_sizes": [
+            12.0,
+            12.0
+          ],
+          "fonts": [
+            "Calibri"
+          ],
+          "is_bold": false,
+          "type": "paragraph",
+          "level": null,
+          "heading_confidence": 0.1
+        }
+      ],
+      "body_font_size": 12.0
+    }
+  ]
+}

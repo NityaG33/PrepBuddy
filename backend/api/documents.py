@@ -1,8 +1,14 @@
 import os
-import tempfile
 
-from fastapi import APIRouter, UploadFile, File, HTTPException
+from pathlib import Path
+from uuid import uuid4
 
+from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
+from sqlalchemy.orm import Session
+
+from core.config import UPLOAD_DIR
+from db.database import get_db
+from db.models import Document, Workspace
 from services.pdf_service import extract_text_from_pdf
 from services.chunking_service import create_chunks
 from services.embedding_service import generate_embeddings
@@ -10,72 +16,232 @@ from vectorstore.faiss_store import FAISSStore
 from vectorstore.store import (
     get_vector_store,
     set_vector_store,
-    save_vector_store
+    save_vector_store,
 )
-
 
 router = APIRouter(
     prefix="/documents",
-    tags=["Documents"]
+    tags=["Documents"],
 )
 
 
 @router.post("/upload")
-async def upload_document(file: UploadFile = File(...)):
-
-    if not file.filename.lower().endswith(".pdf"):
+async def upload_document(
+    file: UploadFile = File(...),
+    workspace_id: int | None = Form(default=None),
+    db: Session = Depends(get_db),
+):
+    # 1. Validate the uploaded file
+    if not file.filename or not file.filename.lower().endswith(".pdf"):
         raise HTTPException(
             status_code=400,
-            detail="Only PDF files are supported"
+            detail="Only PDF files are supported",
         )
+
+    # 2. Find the requested workspace or create a default one
+    if workspace_id is not None:
+        workspace = db.get(Workspace, workspace_id)
+
+        if workspace is None:
+            raise HTTPException(
+                status_code=404,
+                detail="Workspace not found",
+            )
+    else:
+        workspace = db.query(Workspace).first()
+
+        if workspace is None:
+            workspace = Workspace(name="Default Workspace")
+            db.add(workspace)
+            db.commit()
+            db.refresh(workspace)
+
+    # 3. Save the uploaded PDF persistently
+    original_filename = Path(file.filename).name
+    stored_filename = f"{uuid4().hex}_{original_filename}"
+    file_path = UPLOAD_DIR / stored_filename
 
     file_bytes = await file.read()
 
-    with tempfile.NamedTemporaryFile(
-        delete=False,
-        suffix=".pdf"
-    ) as temp_file:
+    if not file_bytes:
+        raise HTTPException(
+            status_code=400,
+            detail="Uploaded file is empty",
+        )
 
-        temp_file.write(file_bytes)
-        temp_file_path = temp_file.name
+    file_path.write_bytes(file_bytes)
+
+    # 4. Create a database record before processing
+    document = Document(
+        workspace_id=workspace.id,
+        filename=original_filename,
+        file_path=str(file_path),
+        status="uploaded",
+    )
+
+    db.add(document)
+    db.commit()
+    db.refresh(document)
 
     try:
-        # 1. Extract text
-        pages = extract_text_from_pdf(temp_file_path)
+        # 5. Mark the document as processing
+        document.status = "processing"
+        db.commit()
 
-        # 2. Create chunks
+        # 6. Extract structured PDF content
+        extraction_result = extract_text_from_pdf(str(file_path))
+
+        pages = extraction_result["pages"]
+        pdf_metadata = extraction_result["metadata"]
+
+        # 7. Create chunks
         chunks = create_chunks(pages)
 
-        # 3. Generate embeddings
+        # Attach document identity to every chunk
+        for chunk in chunks:
+            chunk["document_id"] = document.id
+            chunk["workspace_id"] = workspace.id
+            chunk["filename"] = document.filename
+
+        if not chunks:
+            raise ValueError(
+                "No text could be extracted from the PDF"
+            )
+
+        # 8. Generate embeddings
         texts = [chunk["text"] for chunk in chunks]
         embeddings = generate_embeddings(texts)
 
-        # 4. Get existing vector store
+        # 9. Get or create the FAISS vector store
         vector_store = get_vector_store()
 
-        # 5. Create FAISS index if one doesn't exist
         if vector_store is None:
-            vector_store = FAISSStore(
-                embeddings.shape[1]
-            )
-
+            vector_store = FAISSStore(embeddings.shape[1])
             set_vector_store(vector_store)
 
-        # 6. Add embeddings + metadata
-        vector_store.add(
-            embeddings,
-            chunks
-        )
+        # 10. Add vectors and metadata to FAISS
+        vector_store.add(embeddings, chunks)
 
-        # 7. Persist vector store
+        # 11. Persist the FAISS index
         save_vector_store()
 
+        # 12. Mark the document as indexed
+        document.status = "indexed"
+        document.page_count = len(pages)
+        document.chunk_count = len(chunks)
+        document.error_message = None
+
+        db.commit()
+        db.refresh(document)
+
         return {
-            "filename": file.filename,
-            "total_pages": len(pages),
-            "total_chunks": len(chunks),
-            "message": "Document indexed successfully"
+            "document_id": document.id,
+            "workspace_id": workspace.id,
+            "filename": document.filename,
+            "status": document.status,
+            "total_pages": document.page_count,
+            "total_chunks": document.chunk_count,
+            "message": "Document indexed successfully",
         }
 
+    except Exception as exc:
+        # Record processing failure for troubleshooting
+        document.status = "failed"
+        document.error_message = str(exc)[:2000]
+        db.commit()
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"Document processing failed: {exc}",
+        ) from exc
+
     finally:
-        os.remove(temp_file_path)
+        await file.close()
+
+
+@router.get("/workspace/{workspace_id}")
+def list_workspace_documents(
+    workspace_id: int,
+    db: Session = Depends(get_db),
+):
+    # Check that the workspace exists
+    workspace = (
+        db.query(Workspace)
+        .filter(Workspace.id == workspace_id)
+        .first()
+    )
+
+    if workspace is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Workspace not found",
+        )
+
+    # Get documents belonging to this workspace
+    documents = (
+        db.query(Document)
+        .filter(Document.workspace_id == workspace_id)
+        .order_by(Document.created_at.desc())
+        .all()
+    )
+
+    return {
+        "workspace_id": workspace_id,
+        "documents": [
+            {
+                "id": document.id,
+                "filename": document.filename,
+                "status": document.status,
+                "page_count": document.page_count,
+                "chunk_count": document.chunk_count,
+                "error_message": document.error_message,
+                "created_at": document.created_at,
+            }
+            for document in documents
+        ],
+    }
+
+
+@router.delete("/{document_id}")
+def delete_document(
+    document_id: int,
+    db: Session = Depends(get_db),
+):
+    # Find the document record
+    document = (
+        db.query(Document)
+        .filter(Document.id == document_id)
+        .first()
+    )
+
+    if document is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Document not found",
+        )
+
+    file_path = document.file_path
+
+    # Delete the database record
+    db.delete(document)
+    db.commit()
+
+    # Remove its chunks from FAISS
+    vector_store = get_vector_store()
+    removed_chunks = 0
+
+    if vector_store is not None:
+        removed_chunks = vector_store.remove_document(
+            document_id
+        )
+        save_vector_store()
+
+    # Delete the uploaded PDF from disk
+    if file_path and os.path.exists(file_path):
+        os.remove(file_path)
+
+    return {
+        "message": "Document deleted successfully",
+        "document_id": document_id,
+        "removed_chunks": removed_chunks,
+    }

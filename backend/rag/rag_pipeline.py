@@ -5,12 +5,14 @@ from services.llm_service import generate_answer
 def answer_question(
     retriever,
     question: str,
-    top_k: int = 5
+    top_k: int = 5,
+    workspace_id: int | None = None,
 ):
 
     retrieved_chunks = retriever.retrieve(
         question,
-        top_k=top_k
+        top_k=top_k,
+        workspace_id=workspace_id
     )
 
     if not retrieved_chunks:
@@ -31,8 +33,11 @@ def answer_question(
 
     sources = [
         {
-            "page": result["document"]["page"],
-            "score": result["score"]
+            "document_id": result["document"].get("document_id"),
+            "workspace_id": result["document"].get("workspace_id"),
+            "filename": result["document"].get("filename"),
+            "page": result["document"].get("page"),
+            "score": result["score"],
         }
         for result in retrieved_chunks
     ]

@@ -12,6 +12,7 @@ router = APIRouter(prefix="/chat", tags=["Chat"])
 class ChatRequest(BaseModel):
     question: str
     top_k: int = 5
+    workspace_id: int | None = None
 
 
 @router.post("")
@@ -30,7 +31,8 @@ def chat(request: ChatRequest):
     result = answer_question(
         retriever,
         request.question,
-        request.top_k
+        request.top_k,
+        request.workspace_id
     )
 
     return result

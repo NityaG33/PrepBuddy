@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.documents import router as documents_router
 from api.chat import router as chat_router
 from vectorstore.store import load_vector_store
-
+from api.workspaces import router as workspaces_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -33,6 +33,7 @@ app.add_middleware(
 
 app.include_router(documents_router)
 app.include_router(chat_router)
+app.include_router(workspaces_router)
 
 
 @app.get("/")
