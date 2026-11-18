@@ -9,8 +9,10 @@ from sqlalchemy.orm import Session
 from core.config import UPLOAD_DIR
 from db.database import get_db
 from db.models import Document, Workspace
-from services.pdf_service import extract_text_from_pdf
 from services.chunking_service import create_chunks
+from services.document_processing.pipeline import (
+    create_default_document_processing_pipeline,
+)
 from services.embedding_service import generate_embeddings
 from vectorstore.faiss_store import FAISSStore
 from vectorstore.store import (
@@ -22,6 +24,10 @@ from vectorstore.store import (
 router = APIRouter(
     prefix="/documents",
     tags=["Documents"],
+)
+
+document_processing_pipeline = (
+    create_default_document_processing_pipeline()
 )
 
 
@@ -89,10 +95,13 @@ async def upload_document(
         db.commit()
 
         # 6. Extract structured PDF content
-        extraction_result = extract_text_from_pdf(str(file_path))
+        normalized_document = document_processing_pipeline.process(
+            str(file_path)
+        )
 
-        pages = extraction_result["pages"]
-        pdf_metadata = extraction_result["metadata"]
+        # `pages` is a compatibility view used by our current fixed-size chunker.
+        # Phase 3 will replace that chunker with one that reads structured blocks.
+        pages = normalized_document["pages"]
 
         # 7. Create chunks
         chunks = create_chunks(pages)
@@ -144,19 +153,29 @@ async def upload_document(
             "message": "Document indexed successfully",
         }
 
+    except ValueError as exc:
+        # ValueError represents an expected document-processing problem:
+        # for example, a corrupt PDF or a PDF with no extractable text.
+        document.status = "failed"
+        document.error_message = str(exc)[:2000]
+        db.commit()
+
+        raise HTTPException(
+            status_code=422,
+            detail=str(exc),
+        ) from exc
+
     except Exception as exc:
-        # Record processing failure for troubleshooting
+        # Any other exception is unexpected: database, vector-store,
+        # embedding-service, or programming failures.
         document.status = "failed"
         document.error_message = str(exc)[:2000]
         db.commit()
 
         raise HTTPException(
             status_code=500,
-            detail=f"Document processing failed: {exc}",
+            detail="An unexpected error occurred while processing the document",
         ) from exc
-
-    finally:
-        await file.close()
 
 
 @router.get("/workspace/{workspace_id}")

@@ -1,0 +1,214 @@
+Pages: 37
+Estimated body font size: 20.06399917602539
+Normalized blocks: 207
+
+1. [heading] page=1 level=1 text=Data Pre-Processing-I
+2. [paragraph] page=1 level=None text=(Introduction, Need, Data Cleaning)
+3. [paragraph] page=1 level=None text=TIET, PATIALA
+4. [heading] page=2 level=1 text=Data
+5. [paragraph] page=2 level=None text=▪Data is a unprocessed fact, value, text, sound or picture that is not being
+6. [paragraph] page=2 level=None text=interpreted and analyzed.
+7. [paragraph] page=2 level=None text=▪Data is the most important part of all Data Analytics, Machine Learning,
+8. [paragraph] page=2 level=None text=Artificial Intelligence.
+9. [paragraph] page=2 level=None text=▪Big Enterprises are spending lots of money just to gather as much certain data as
+10. [paragraph] page=2 level=None text=possible.
+11. [heading] page=2 level=3 text=In 2021, Facebook acquire WhatsApp by paying a huge price of $19 billion
+12. [heading] page=3 level=1 text=Structured vs. Unstructured Data in ML
+13. [heading] page=4 level=1 text=Structured Data in ML
+14. [paragraph] page=4 level=None text=▪Structured data in Machine Learning is stored in the form of rows and columns.
+15. [paragraph] page=4 level=None text=▪Each instance of structured data represents a feature/attribute.
+16. [paragraph] page=4 level=None text=▪For instance a well known ML dataset, Iris, has five features about species namely Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, Species.
+17. [heading] page=5 level=1 text=Types of Features
+18. [paragraph] page=5 level=None text=Quantitative
+19. [paragraph] page=5 level=None text=Qualitative Nominal
+20. [paragraph] page=5 level=None text=Binary
+21. [paragraph] page=5 level=None text=(Numerical)
+22. [paragraph] page=5 level=None text=(Categorical)
+23. [list_item] page=5 level=None text=• Which have two values (0/1, yes/no, true/false) • Examples- Marital Status, Permanent Employee, etc.
+24. [list_item] page=5 level=None text=• Categorical data where order of categories is arbitrary • Example- account type (savings, current, fixed term, etc).
+25. [list_item] page=5 level=None text=• Quantitative data being measured. • Can be Continuous (infinite values- length, mass, weight) or Discrete (finite integer values- no. of workers absent)
+26. [heading] page=6 level=1 text=Types of Features Contd….
+27. [heading] page=6 level=2 text=Interval
+28. [heading] page=6 level=2 text=Ratio
+29. [heading] page=6 level=2 text=Qualitative Ordinal (Ranked)
+30. [list_item] page=6 level=None text=• Has meaningful intervals between measurement. • No true starting point (zero) • Example- Temperature
+31. [list_item] page=6 level=None text=• Categorical data where there is some logical ordering of categories • Example: Size (S, M, L, XL, XXL, etc.), Likert Scale (Strongly Disagree, Disagree, Neutral, Agree, etc.)
+32. [list_item] page=6 level=None text=• Have highest level of measurement. • Ratios between measurements and intervals are meaningful because there is true starting point (zero) • Example: weight, Age
+33. [heading] page=7 level=1 text=Data Pre-Processing
+34. [paragraph] page=7 level=None text=▪Data Pre-processing: It is that phase of any Machine Learning process, which transforms, or Encodes, the data to bring it to such a state where it can be easily interpreted by the
+35. [paragraph] page=7 level=None text=“Data pre-processing is not a single standalone entity but a collection of multiple interrelated tasks”
+36. [paragraph] page=7 level=None text=“Collectively data pre-processing constitutes majority of the effort in machine learning process (approx. 90 % )”
+37. [heading] page=8 level=1 text=Data Pre-Processing
+38. [paragraph] page=8 level=None text=▪Data Pre-processing: It is that phase of any Machine Learning process, which transforms, or Encodes, the data to bring it to such a state where it can be easily interpreted by the
+39. [paragraph] page=8 level=None text=“Data pre-processing is not a single standalone entity but a collection of multiple interrelated tasks”
+40. [paragraph] page=8 level=None text=“Collectively data pre-processing constitutes majority of the effort in machine learning process (approx. 90 % )”
+41. [heading] page=9 level=1 text=Need of Data Pre-Processing
+42. [paragraph] page=9 level=None text=➢ Data in the real world is “quite messy”
+43. [list_item] page=9 level=None text=• incomplete: missing feature values, absence of certain crucial feature, or containing only
+44. [paragraph] page=9 level=None text=aggregate data.
+45. [list_item] page=9 level=None text=▪ e.g. Height=“ ”
+46. [list_item] page=9 level=None text=• noisy: containing errors or outliers
+47. [list_item] page=9 level=None text=▪ e.g. Weight=“5000” or “-60”
+48. [list_item] page=9 level=None text=• inconsistent: containing discrepancies in feature values.
+49. [list_item] page=9 level=None text=▪ e.g. Age=“20” and dob=“12 july 1990”
+50. [list_item] page=9 level=None text=▪ e.g. contradictions between duplicate records
+51. [heading] page=10 level=1 text=Need for data Pre-processing
+52. [heading] page=10 level=2 text=➢Unstructured Data (Text)
+53. [list_item] page=10 level=None text=• Lower Case • Normalization (remove punctuation, special symbols, urls) • Stopwords Removal (of, and, the,….) • Stemming/Lemmatization (plays, playing, played →play) ➢Unstructured
+54. [list_item] page=10 level=None text=• Read image • Resize image • Remove noise(Denoise) • Segmentation • Morphology(smoothing edges)
+55. [heading] page=11 level=1 text=Pre- Processing in Structured Data
+56. [heading] page=11 level=2 text=➢Major data pre-processing tasks
+57. [list_item] page=11 level=None text=• Data cleaning
+58. [list_item] page=11 level=None text=• Data integration
+59. [list_item] page=11 level=None text=• Data transformation
+60. [list_item] page=11 level=None text=• Data reduction
+61. [heading] page=12 level=1 text=Data Cleaning
+62. [paragraph] page=12 level=None text=▪Data cleaning: It is a procedure to "clean" the data by filling in missing values, smoothening noisy data, identifying or removing outliers, and resolving data inconsistencies.
+63. [paragraph] page=12 level=None text=▪Data cleaning tasks
+64. [list_item] page=12 level=None text=• Fill missing values • Noise smoothening and outlier detection • Resolving inconsistencies
+65. [heading] page=13 level=1 text=Data Cleaning- Missing Values
+66. [paragraph] page=13 level=None text=Missing values: data values are not available.
+67. [paragraph] page=13 level=None text=i.e. many data entities have no data values corresponding to a certain feature like BMI value missing for some persons in a diabetes dataset.
+68. [paragraph] page=13 level=None text=➢Probable reasons for missing values:
+69. [list_item] page=13 level=None text=• faulty measuring equipment
+70. [list_item] page=13 level=None text=• reluctance of person to share certain detail
+71. [list_item] page=13 level=None text=• negligence on part of data entry operator
+72. [list_item] page=13 level=None text=• feature unimportance at time of data collection
+73. [heading] page=14 level=1 text=Data Cleaning- Missing Values Contd…
+74. [paragraph] page=14 level=None text=➢Missing data handling techniques
+75. [list_item] page=14 level=None text=• Removing the data entity • Manually filling the values • Imputation (process used to determine and assign replacement values for missing, invalid, or inconsistent data)
+76. [paragraph] page=14 level=None text=“Technique selection is specific to user’s preference, dataset or feature
+77. [paragraph] page=14 level=None text=type or problem set”
+78. [heading] page=15 level=1 text=Data Cleaning- Missing Values Contd…
+79. [heading] page=15 level=2 text=➢Sample dataset related to forest fires
+80. [heading] page=16 level=1 text=Data Cleaning- Missing Values Contd…
+81. [paragraph] page=16 level=None text=Removing the data entity: Most easiest way directly to clean the data, but this is usually discouraged as it leads to loss of data, as you are removing the data entity or feature v
+82. [paragraph] page=16 level=None text=Month FFMC DC temp RH wind mar 86.2 94.3 8.2 51 6.7 oct 90.6 669.1 18 33 0.9 mar 89.3 102.2 11.4 99 1.8 aug 91.5 608.2 8 86 2.2 sep 92.5 698.6 22.8 40 4
+83. [heading] page=17 level=1 text=Data Cleaning- Missing Values Contd…
+84. [paragraph] page=17 level=None text=◦Manually filing up of values : This approach is time consuming, and not recommended for huge data sets.
+85. [paragraph] page=17 level=None text=Month FFMC DC temp RH wind mar 86.2 94.3 8.2 51 6.7 oct 90.6 669.1 18 33 0.9 oct 90.6 686.9 NaN 33 NaN mar NaN 77.5 8.3 97 4 mar 89.3 102.2 11.4 99 1.8 aug 92.3 NaN 22.2 NaN NaN au
+86. [paragraph] page=17 level=None text=Month FFMC DC temp RH wind mar 86.2 94.3 8.2 51 6.7 oct 90.6 669.1 18 33 0.9 oct 90.6 686.9 17 33 0.8 mar 91.6 77.5 8.3 97 4 mar 89.3 102.2 11.4 99 1.8 aug 92.3 380 22.2 92 1.8 aug
+87. [heading] page=18 level=1 text=Data Cleaning- Missing Values Contd…
+88. [paragraph] page=18 level=None text=◦Imputation : process used to determine and assign replacement values for missing, invalid, or inconsistent data. Various imputation methods include: ➢Central Tendency Imputation ➢
+89. [heading] page=19 level=1 text=Data Cleaning (Missing values)- Contd…
+90. [paragraph] page=19 level=None text=Central tendency Imputation : Replacing the missing value by central tendency (mean, median, mode) for a feature vector or belonging to same class of feature vector.
+91. [paragraph] page=19 level=None text=Mean
+92. [paragraph] page=19 level=None text=Median
+93. [paragraph] page=19 level=None text=Mode : Mode is the most frequent value corresponding to a certain feature in a given data set UML 501: MACHINE LEARNING
+94. [heading] page=20 level=1 text=Data Cleaning- Missing Values Contd…
+95. [paragraph] page=20 level=None text=◦Replacing Mean Value:
+96. [paragraph] page=20 level=None text=Month FFMC DC temp RH wind mar 86.2 94.3 8.2 51 6.7 oct 90.6 669.1 18 33 0.9 oct 90.6 686.9 15.3 33 3.57 mar 90.5 77.5 8.3 97 4 mar 89.3 102.2 11.4 99 1.8 aug 92.3 458.3 22.2 58.7 
+97. [paragraph] page=20 level=None text=sep 91 692.6 15.3 63 5.4 sep 92.5 698.6 22.8 40 4
+98. [heading] page=21 level=1 text=Data Cleaning- Missing Values Contd…
+99. [paragraph] page=21 level=None text=◦“ Replacing by mean value: Not a suitable method if data set has many outliers” ◦For example: weighs of humans 67, 78, 900,-56,389,-1 etc.
+100. [paragraph] page=21 level=None text=Outlier Mean is 229.5 o Can be replaced with median in such cases. o “Mode is a good option for missing values in case of categorical variables”
+101. [heading] page=22 level=1 text=Data Cleaning- Missing Values Contd…
+102. [heading] page=22 level=2 text=Hot Deck Imputation
+103. [list_item] page=22 level=None text=• Computes how many number of features (other than feature with missing data) have same values in the entire training examples and choose it for replacement. • Used mostly in categ
+104. [heading] page=22 level=2 text=Cold Deck Imputation
+105. [list_item] page=22 level=None text=• Similar to hot deck imputation. • In it missing observations are replaced by values from a source unrelated to the data set under consideration. (Previous Study)
+106. [heading] page=23 level=1 text=Data Cleaning- Missing Values Contd…
+107. [heading] page=23 level=2 text=Nearest Neighbor-
+108. [list_item] page=23 level=None text=• Rely on distance metrics • evaluate the distance between recipients and donors. • Used after converting all features to numerical (quantitative)
+109. [heading] page=23 level=2 text=Based Imputation
+110. [heading] page=24 level=1 text=Data Cleaning- Noisy Data
+111. [paragraph] page=24 level=None text=▪Noise is defined as a random variance in a measured variable.
+112. [paragraph] page=24 level=None text=▪For numeric values, boxplots and scatter plots can be used to identify outliers.
+113. [paragraph] page=24 level=None text=Boxplot Scatter plot
+114. [heading] page=25 level=1 text=Data Cleaning- Noisy Data
+115. [paragraph] page=25 level=None text=➢Major reasons of random variations in data are:
+116. [list_item] page=25 level=None text=• Malfunctioning of collection instruments. • Data entry lags. • Data transmission problems
+117. [paragraph] page=25 level=None text=To deal with these anomalous values, data smoothing techniques are applied, some of the popular ones are
+118. [list_item] page=25 level=None text=• Binning method • Regression • Outlier analysis
+119. [heading] page=26 level=1 text=Binning Method for Noisy Data
+120. [paragraph] page=26 level=None text=Binning method : performs the task of data smoothening.
+121. [heading] page=26 level=3 text=Steps to be followed under binning method are:
+122. [paragraph] page=26 level=None text=Step 1: Sort the data into ascending order.
+123. [paragraph] page=26 level=None text=Step 2: Calculate the bin size (i.e. number of bins) Step 3: Partition or distribute the data equally among the bins starting with first element of sorted data.
+124. [paragraph] page=26 level=None text=Step 4: perform data smoothening using bin means, bin boundaries, and bin median.
+125. [paragraph] page=26 level=None text=Last bin can have one less or more element!!
+126. [heading] page=27 level=1 text=Binning Method for Noisy Data
+127. [heading] page=27 level=3 text=Example : 9, 21, 29, 28, 4, 21, 8, 24, 26
+128. [paragraph] page=27 level=None text=Step1: sorted the data 4, 8, 9, 21, 21, 24, 26, 28, 29 Step 2 : Bin size calculation 𝑀𝑎𝑥𝑣𝑎𝑙𝑢𝑒−𝑀𝑖𝑛𝑣𝑎𝑙𝑢𝑒
+129. [paragraph] page=27 level=None text=𝑑𝑎𝑡𝑎𝑠𝑖𝑧𝑒 Bin size = = 29-4 = 2.777 9
+130. [paragraph] page=27 level=None text=But we need to take ceiling value, so bin size is 3 here
+131. [heading] page=28 level=1 text=Binning Method for Noisy Data
+132. [paragraph] page=28 level=None text=▪Step 3 : Bin partitioning (equi-size bins) Bin 1: 4, 8, 9 Bin 2: 21, 21, 24 Bin 3: 26, 28, 29 Step 4 : data smoothening ➢Using mean value : replace the bin values by bin average B
+133. [heading] page=29 level=1 text=Binning Method for Noisy Data
+134. [paragraph] page=29 level=None text=▪➢Using boundary values : replace the bin value by a closest boundary value of the corresponding bin.
+135. [paragraph] page=29 level=None text=“Boundary values remain unchanged in boundary method”
+136. [paragraph] page=29 level=None text=Bin 1: 4, 9, 9 Bin 2: 21, 21, 24 Bin 3: 26, 29, 29 ➢Using median values : replace the bin value by a bin median.
+137. [paragraph] page=29 level=None text=Bin 1: 8, 8, 8 Bin 2: 21, 21, 21 Bin 3: 28, 28, 28
+138. [heading] page=30 level=1 text=Outlier Analysis
+139. [paragraph] page=30 level=None text=▪An outlier is an object that deviates significantly from the rest of the objects. ▪They can be caused by measurement or execution error. ▪The analysis of outlier data is referred 
+140. [heading] page=31 level=1 text=Outlier Analysis
+141. [paragraph] page=31 level=None text=▪Types of Outliers:
+142. [paragraph] page=31 level=None text=➢Univariate: A univariate outlier is a data point that consists of an extreme
+143. [paragraph] page=31 level=None text=value on one variable. ➢Multivariate: A multivariate outlier is a combination of unusual scores on at
+144. [paragraph] page=31 level=None text=least two variables.
+145. [paragraph] page=31 level=None text=▪Outlier Detection and Handling Methods ➢Extreme Value Analysis ➢Linear Models ➢Proximity-based Methods ➢Information Theoretic Methods
+146. [heading] page=32 level=1 text=Extreme Value Analysis- Outlier Analysis
+147. [paragraph] page=32 level=None text=▪Numeric Outlier ▪This is the simplest, nonparametric outlier
+148. [paragraph] page=32 level=None text=Assume the data 6, 2, 1, 5, 4, 3, 50. If these values represent the number of chapatis eaten in lunch, then 50 is clearly an outlier.
+149. [paragraph] page=32 level=None text=detection method in a one dimensional feature space.
+150. [paragraph] page=32 level=None text=Sorted Values: 1, 2, 3, 4, 5, 6, 50 ▪Here outliers are calculated by means of
+151. [paragraph] page=32 level=None text=Q1 25 percentile of the given data is, 2
+152. [paragraph] page=32 level=None text=the IQR (InterQuartile Range).
+153. [paragraph] page=32 level=None text=Q2 50 percentile of the given data is, 4.0
+154. [paragraph] page=32 level=None text=▪The first and the third quartile (Q1, Q3) are
+155. [paragraph] page=32 level=None text=Q3 75 percentile of the given data is, 6
+156. [paragraph] page=32 level=None text=calculated.
+157. [paragraph] page=32 level=None text=IQR= 6-2=4, k=1.5
+158. [paragraph] page=32 level=None text=▪An outlier is then a data point xi that lies
+159. [paragraph] page=32 level=None text=outside the interquartile range. That is:
+160. [paragraph] page=32 level=None text=Range: 6-1.5 X 4=0 and 6+1.5X4=12 𝑥𝑖> 𝑄3 + 𝑘𝐼𝑄𝑅𝑎𝑛𝑑𝑥𝑖< 𝑄1 −𝑘𝐼𝑄𝑅
+161. [heading] page=32 level=3 text=50 is Outlier
+162. [paragraph] page=32 level=None text=where IQR=Q3-Q1 and k >=0 As data is no. of chapatis eaten in a day so min value should be zero.
+163. [heading] page=33 level=1 text=Extreme Value Analysis- Outlier Analysis
+164. [paragraph] page=33 level=None text=▪Z-score is a parametric outlier detection method in a one or low dimensional feature space. ▪This technique assumes a Gaussian distribution of the data. ▪The outliers are the data
+165. [paragraph] page=33 level=None text=the formula:
+166. [paragraph] page=33 level=None text=𝑧𝑖= 𝑥𝑖−𝜇
+167. [paragraph] page=33 level=None text=𝜎 where xi is a data point, μ is the mean of all xi and is the standard deviation of all xi.
+168. [paragraph] page=33 level=None text=An outlier is then a normalized data point which has an absolute value greater than zthr.
+169. [paragraph] page=33 level=None text=𝑧𝑖> 𝑧𝑡ℎ𝑟 Commonly used zthr values are 2.5, 3.0 and 3.5.
+170. [heading] page=34 level=1 text=Outlier Analysis
+171. [list_item] page=34 level=None text=• Linear Models: ➢Projection methods that model the data into lower dimensions using linear
+172. [paragraph] page=34 level=None text=correlations. ➢For example, principle component analysis and data with large residual errors may be
+173. [paragraph] page=34 level=None text=outliers.
+174. [paragraph] page=34 level=None text=•Proximity-based Models: ➢Data instances that are isolated from the mass of the data as determined by cluster,
+175. [paragraph] page=34 level=None text=density or nearest neighbor analysis.
+176. [paragraph] page=34 level=None text=•Information Theoretic Models: ➢Outliers are detected as data instances that increase the complexity (minimum code
+177. [paragraph] page=34 level=None text=length) of the dataset.
+178. [heading] page=35 level=1 text=Regression for Noisy Data
+179. [paragraph] page=35 level=None text=▪Regression method : Linear regression and multiple linear regression can be used to smoothen the data, where the values are conformed to a function.
+180. [heading] page=36 level=1 text=Data Cleaning – Inconsistent Data
+181. [paragraph] page=36 level=None text=Inconsistent Data: discrepancies between different data items.
+182. [paragraph] page=36 level=None text=e.g. the “Address” field contains the “Phone number”
+183. [heading] page=36 level=3 text=To resolve inconsistencies
+184. [paragraph] page=36 level=None text=➢Manual correction using external references ➢ Semi-automatic tools
+185. [list_item] page=36 level=None text=• To detect violation of known functional dependencies and data constraints
+186. [list_item] page=36 level=None text=• To correct redundant data
+187. [paragraph] page=36 level=None text=To avoid inconsistencies, perform data assessment like knowing what the data type of the features should be and whether it is the same for all the data objects.”
+188. [heading] page=37 level=1 text=Data Cleaning-Summary
+189. [paragraph] page=37 level=None text=Data Cleaning Missing Data
+190. [paragraph] page=37 level=None text=Noise/Outlier Analysis
+191. [paragraph] page=37 level=None text=Data Inconsistencies Assign value
+192. [paragraph] page=37 level=None text=Regression
+193. [paragraph] page=37 level=None text=Remove Examples
+194. [paragraph] page=37 level=None text=manually Imputation
+195. [paragraph] page=37 level=None text=Binning Outlier Analysis
+196. [paragraph] page=37 level=None text=Data Constraints
+197. [paragraph] page=37 level=None text=Data Redundancy Extreme
+198. [paragraph] page=37 level=None text=Proximity-
+199. [paragraph] page=37 level=None text=Information
+200. [paragraph] page=37 level=None text=Central Tendency
+201. [paragraph] page=37 level=None text=Hot Deck Imputation
+202. [paragraph] page=37 level=None text=Cold Deck Imputation
+203. [paragraph] page=37 level=None text=Nearest Neighbor
+204. [paragraph] page=37 level=None text=Linear Models
+205. [paragraph] page=37 level=None text=Based
+206. [paragraph] page=37 level=None text=Theoritic
+207. [paragraph] page=37 level=None text=Value Analysis
+
+Full normalized result saved to:
+test_output/normalized_document.json

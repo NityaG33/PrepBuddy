@@ -1,0 +1,284 @@
+{
+  "file": "9_Linear Regression- Gradient Descent Method.pdf",
+  "processing_time_seconds": 0.192,
+  "page_count": 21,
+  "body_font_size": 17.040000915527344,
+  "total_normalized_blocks": 336,
+  "block_type_counts": {
+    "heading": 120,
+    "paragraph": 216
+  },
+  "empty_pages": [],
+  "heading_examples": [
+    {
+      "page": 1,
+      "level": 1,
+      "text": "Linear Regression"
+    },
+    {
+      "page": 1,
+      "level": 1,
+      "text": "(Gradient Descent Optimization)"
+    },
+    {
+      "page": 1,
+      "level": 2,
+      "text": "TIET, PATIALA"
+    },
+    {
+      "page": 2,
+      "level": 1,
+      "text": "Simple Linear Regression- Cost Function"
+    },
+    {
+      "page": 2,
+      "level": 1,
+      "text": "Overview"
+    },
+    {
+      "page": 2,
+      "level": 3,
+      "text": "1 1"
+    },
+    {
+      "page": 2,
+      "level": 3,
+      "text": "2 2"
+    },
+    {
+      "page": 2,
+      "level": 3,
+      "text": "3 3"
+    },
+    {
+      "page": 3,
+      "level": 1,
+      "text": "Plot of Cost Function of SLR"
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "1 1 𝐽𝛽1 ="
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "1 3 [ 1 −1 2 + (2 −2)2+(3 −3)2]=0"
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "2 0.5 𝐽𝛽1 ="
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "1 3 [ 1 −0.5 2 + (2 −1)2+(3 −1.5)2]=1.67"
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "0 0.5 1 1.5 2 2.5"
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "3 0 𝐽𝛽1 ="
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "1 3 [ 1 −0 2 + (2 −0)2+(3 −0)2]=4.67"
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "4 1.5 𝐽𝛽1 ="
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "1 3 [ 1 −1.5 2 + (2 −3)2+(3 −4.5)2]=1.67"
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "5 2 𝐽𝛽1 ="
+    },
+    {
+      "page": 3,
+      "level": 3,
+      "text": "1 3 [ 1 −2 2 + (2 −4)2+(3 −6)2]=4.67"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 65,
+      "block_count": 3,
+      "heading_count": 3,
+      "paragraph_count": 0,
+      "list_item_count": 0
+    },
+    {
+      "page": 2,
+      "text_length": 607,
+      "block_count": 24,
+      "heading_count": 5,
+      "paragraph_count": 19,
+      "list_item_count": 0
+    },
+    {
+      "page": 3,
+      "text_length": 666,
+      "block_count": 32,
+      "heading_count": 12,
+      "paragraph_count": 20,
+      "list_item_count": 0
+    },
+    {
+      "page": 4,
+      "text_length": 360,
+      "block_count": 7,
+      "heading_count": 1,
+      "paragraph_count": 6,
+      "list_item_count": 0
+    },
+    {
+      "page": 5,
+      "text_length": 856,
+      "block_count": 10,
+      "heading_count": 1,
+      "paragraph_count": 9,
+      "list_item_count": 0
+    },
+    {
+      "page": 6,
+      "text_length": 437,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 7,
+      "text_length": 942,
+      "block_count": 13,
+      "heading_count": 1,
+      "paragraph_count": 12,
+      "list_item_count": 0
+    },
+    {
+      "page": 8,
+      "text_length": 671,
+      "block_count": 11,
+      "heading_count": 1,
+      "paragraph_count": 10,
+      "list_item_count": 0
+    },
+    {
+      "page": 9,
+      "text_length": 320,
+      "block_count": 8,
+      "heading_count": 7,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 10,
+      "text_length": 382,
+      "block_count": 9,
+      "heading_count": 9,
+      "paragraph_count": 0,
+      "list_item_count": 0
+    },
+    {
+      "page": 11,
+      "text_length": 650,
+      "block_count": 25,
+      "heading_count": 4,
+      "paragraph_count": 21,
+      "list_item_count": 0
+    },
+    {
+      "page": 12,
+      "text_length": 522,
+      "block_count": 22,
+      "heading_count": 6,
+      "paragraph_count": 16,
+      "list_item_count": 0
+    },
+    {
+      "page": 13,
+      "text_length": 305,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 14,
+      "text_length": 473,
+      "block_count": 24,
+      "heading_count": 10,
+      "paragraph_count": 14,
+      "list_item_count": 0
+    },
+    {
+      "page": 15,
+      "text_length": 516,
+      "block_count": 27,
+      "heading_count": 12,
+      "paragraph_count": 15,
+      "list_item_count": 0
+    },
+    {
+      "page": 16,
+      "text_length": 550,
+      "block_count": 28,
+      "heading_count": 12,
+      "paragraph_count": 16,
+      "list_item_count": 0
+    },
+    {
+      "page": 17,
+      "text_length": 521,
+      "block_count": 15,
+      "heading_count": 2,
+      "paragraph_count": 13,
+      "list_item_count": 0
+    },
+    {
+      "page": 18,
+      "text_length": 384,
+      "block_count": 18,
+      "heading_count": 5,
+      "paragraph_count": 13,
+      "list_item_count": 0
+    },
+    {
+      "page": 19,
+      "text_length": 439,
+      "block_count": 9,
+      "heading_count": 3,
+      "paragraph_count": 6,
+      "list_item_count": 0
+    },
+    {
+      "page": 20,
+      "text_length": 507,
+      "block_count": 11,
+      "heading_count": 10,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 21,
+      "text_length": 958,
+      "block_count": 34,
+      "heading_count": 14,
+      "paragraph_count": 20,
+      "list_item_count": 0
+    }
+  ]
+}

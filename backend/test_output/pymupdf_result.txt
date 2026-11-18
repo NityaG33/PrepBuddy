@@ -1,0 +1,149 @@
+Pages: 37
+Metadata: {'format': 'PDF 1.7', 'title': 'Data Pre-Processing (Introduction, Need, Data Cleaning, Data Integration) ', 'author': 'Jasmeet Singh', 'subject': '', 'keywords': '', 'creator': 'Foxit Software Inc.', 'producer': 'iOS Version 18.5 (Build 22F76) Quartz PDFContext, AppendMode 1.1', 'creationDate': "D:20230807102331+05'30'", 'modDate': "D:20250810172508Z00'00'", 'trapped': '', 'encryption': None}
+Page 1: 3 text blocks
+Page 2: 8 text blocks
+Page 3: 1 text blocks
+Page 4: 5 text blocks
+Page 5: 9 text blocks
+Page 6: 7 text blocks
+Page 7: 8 text blocks
+Page 8: 8 text blocks
+Page 9: 10 text blocks
+Page 10: 4 text blocks
+Page 11: 6 text blocks
+Page 12: 5 text blocks
+Page 13: 8 text blocks
+Page 14: 5 text blocks
+Page 15: 2 text blocks
+Page 16: 3 text blocks
+Page 17: 4 text blocks
+Page 18: 3 text blocks
+Page 19: 6 text blocks
+Page 20: 6 text blocks
+Page 21: 4 text blocks
+Page 22: 5 text blocks
+Page 23: 4 text blocks
+Page 24: 4 text blocks
+Page 25: 5 text blocks
+Page 26: 8 text blocks
+Page 27: 8 text blocks
+Page 28: 6 text blocks
+Page 29: 8 text blocks
+Page 30: 2 text blocks
+Page 31: 7 text blocks
+Page 32: 21 text blocks
+Page 33: 10 text blocks
+Page 34: 8 text blocks
+Page 35: 3 text blocks
+Page 36: 11 text blocks
+Page 37: 23 text blocks
+{
+  "metadata": {
+    "format": "PDF 1.7",
+    "title": "Data Pre-Processing (Introduction, Need, Data Cleaning, Data Integration) ",
+    "author": "Jasmeet Singh",
+    "subject": "",
+    "keywords": "",
+    "creator": "Foxit Software Inc.",
+    "producer": "iOS Version 18.5 (Build 22F76) Quartz PDFContext, AppendMode 1.1",
+    "creationDate": "D:20230807102331+05'30'",
+    "modDate": "D:20250810172508Z00'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "page_count": 37,
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 960.0,
+      "height": 540.0,
+      "blocks": [
+        {
+          "bbox": [
+            147.30999755859375,
+            149.76199340820312,
+            818.1556396484375,
+            229.8260040283203
+          ],
+          "lines": [
+            {
+              "bbox": [
+                147.30999755859375,
+                149.76199340820312,
+                818.1556396484375,
+                229.8260040283203
+              ],
+              "spans": [
+                {
+                  "text": "Data Pre-Processing-I",
+                  "bbox": [
+                    147.30999755859375,
+                    149.76199340820312,
+                    818.1556396484375,
+                    229.8260040283203
+                  ],
+                  "font": "Calibri-Light",
+                  "font_size": 80.06400299072266,
+                  "flags": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bbox": [
+            317.5,
+            227.68600463867188,
+            647.6919555664062,
+            254.25401306152344
+          ],
+          "lines": [
+            {
+              "bbox": [
+                317.5,
+                227.68600463867188,
+                647.6919555664062,
+                254.25401306152344
+              ],
+              "spans": [
+                {
+                  "text": "(Introduction, Need, Data Cleaning)",
+                  "bbox": [
+                    317.5,
+                    227.68600463867188,
+                    647.6919555664062,
+                    254.25401306152344
+                  ],
+                  "font": "TimesNewRomanPSMT",
+                  "font_size": 24.0,
+                  "flags": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bbox": [
+            721.510009765625,
+            356.0899963378906,
+            869.446044921875,
+            380.0899963378906
+          ],
+          "lines": [
+            {
+              "bbox": [
+                721.510009765625,
+                356.0899963378906,
+                869.446044921875,
+                380.0899963378906
+              ],
+              "spans": [
+                {
+                  "text": "TIET, PATIALA",
+                  "bbox": [
+                    721.510009765625,
+                    356.0899963378906,
+                    869.446044921875,
+                    380.0899963378906
+                  ],
+                  "fon

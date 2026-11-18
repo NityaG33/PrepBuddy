@@ -1,0 +1,22 @@
+{
+  "file": "empty.pdf",
+  "processing_time_seconds": 0.008,
+  "page_count": 1,
+  "body_font_size": 12.0,
+  "total_normalized_blocks": 0,
+  "block_type_counts": {},
+  "empty_pages": [
+    1
+  ],
+  "heading_examples": [],
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 0,
+      "block_count": 0,
+      "heading_count": 0,
+      "paragraph_count": 0,
+      "list_item_count": 0
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "file": "5_Data Pre-Processing-II.pdf",
+  "processing_time_seconds": 0.133,
+  "page_count": 27,
+  "body_font_size": 21.959999084472656,
+  "total_normalized_blocks": 168,
+  "block_type_counts": {
+    "heading": 38,
+    "paragraph": 121,
+    "list_item": 9
+  },
+  "empty_pages": [],
+  "heading_examples": [
+    {
+      "page": 1,
+      "level": 1,
+      "text": "Data Pre-Processing-II"
+    },
+    {
+      "page": 1,
+      "level": 2,
+      "text": "(Data Integration, Data Transformation)"
+    },
+    {
+      "page": 2,
+      "level": 1,
+      "text": "Data Integration"
+    },
+    {
+      "page": 2,
+      "level": 2,
+      "text": "Issues in data integration"
+    },
+    {
+      "page": 3,
+      "level": 1,
+      "text": "Data Integration"
+    },
+    {
+      "page": 3,
+      "level": 2,
+      "text": "Schema integration and feature matching:"
+    },
+    {
+      "page": 4,
+      "level": 1,
+      "text": "Data Integration"
+    },
+    {
+      "page": 4,
+      "level": 2,
+      "text": "Detection and resolution of data value conflicts:"
+    },
+    {
+      "page": 5,
+      "level": 1,
+      "text": "Data Integration Redundant features: They are unwanted features."
+    },
+    {
+      "page": 6,
+      "level": 1,
+      "text": "Data Transformation"
+    },
+    {
+      "page": 6,
+      "level": 2,
+      "text": "Major techniques of data transformation are :-"
+    },
+    {
+      "page": 7,
+      "level": 1,
+      "text": "Data Transformation- Scaling"
+    },
+    {
+      "page": 8,
+      "level": 1,
+      "text": "Data Transformation- Scaling Contd"
+    },
+    {
+      "page": 8,
+      "level": 2,
+      "text": "Min-Max method:"
+    },
+    {
+      "page": 9,
+      "level": 1,
+      "text": "Data Transformation- Scaling Contd"
+    },
+    {
+      "page": 9,
+      "level": 2,
+      "text": "Mean normalization"
+    },
+    {
+      "page": 10,
+      "level": 1,
+      "text": "Data Transformation- Scaling Contd…"
+    },
+    {
+      "page": 10,
+      "level": 2,
+      "text": "Z Score method:"
+    },
+    {
+      "page": 11,
+      "level": 1,
+      "text": "Data Transformation- Scaling Contd…"
+    },
+    {
+      "page": 11,
+      "level": 2,
+      "text": "Decimal scaling method:"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 122,
+      "block_count": 3,
+      "heading_count": 2,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 2,
+      "text_length": 347,
+      "block_count": 8,
+      "heading_count": 2,
+      "paragraph_count": 3,
+      "list_item_count": 3
+    },
+    {
+      "page": 3,
+      "text_length": 179,
+      "block_count": 5,
+      "heading_count": 2,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 4,
+      "text_length": 245,
+      "block_count": 7,
+      "heading_count": 2,
+      "paragraph_count": 5,
+      "list_item_count": 0
+    },
+    {
+      "page": 5,
+      "text_length": 250,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 6,
+      "text_length": 276,
+      "block_count": 7,
+      "heading_count": 2,
+      "paragraph_count": 1,
+      "list_item_count": 4
+    },
+    {
+      "page": 7,
+      "text_length": 382,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 8,
+      "text_length": 296,
+      "block_count": 13,
+      "heading_count": 2,
+      "paragraph_count": 11,
+      "list_item_count": 0
+    },
+    {
+      "page": 9,
+      "text_length": 354,
+      "block_count": 14,
+      "heading_count": 2,
+      "paragraph_count": 12,
+      "list_item_count": 0
+    },
+    {
+      "page": 10,
+      "text_length": 295,
+      "block_count": 13,
+      "heading_count": 2,
+      "paragraph_count": 11,
+      "list_item_count": 0
+    },
+    {
+      "page": 11,
+      "text_length": 326,
+      "block_count": 12,
+      "heading_count": 2,
+      "paragraph_count": 10,
+      "list_item_count": 0
+    },
+    {
+      "page": 12,
+      "text_length": 455,
+      "block_count": 12,
+      "heading_count": 2,
+      "paragraph_count": 10,
+      "list_item_count": 0
+    },
+    {
+      "page": 13,
+      "text_length": 300,
+      "block_count": 9,
+      "heading_count": 1,
+      "paragraph_count": 8,
+      "list_item_count": 0
+    },
+    {
+      "page": 14,
+      "text_length": 592,
+      "block_count": 14,
+      "heading_count": 2,
+      "paragraph_count": 12,
+      "list_item_count": 0
+    },
+    {
+      "page": 15,
+      "text_length": 467,
+      "block_count": 6,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 2
+    },
+    {
+      "page": 16,
+      "text_length": 40,
+      "block_count": 1,
+      "heading_count": 1,
+      "paragraph_count": 0,
+      "list_item_count": 0
+    },
+    {
+      "page": 17,
+      "text_length": 322,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 18,
+      "text_length": 352,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 19,
+      "text_length": 679,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 20,
+      "text_length": 537,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 21,
+      "text_length": 391,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 22,
+      "text_length": 597,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 23,
+      "text_length": 60,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 24,
+      "text_length": 480,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 4,
+      "list_item_count": 0
+    },
+    {
+      "page": 25,
+      "text_length": 58,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 26,
+      "text_length": 205,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 27,
+      "text_length": 733,
+      "block_count": 7,
+      "heading_count": 1,
+      "paragraph_count": 6,
+      "list_item_count": 0
+    }
+  ]
+}

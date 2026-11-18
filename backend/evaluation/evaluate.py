@@ -1,13 +1,17 @@
 import json
 
 from services.embedding_service import generate_embeddings
-from services.pdf_service import extract_text_from_pdf
+from services.document_processing.pipeline import (
+    create_default_document_processing_pipeline,
+)
 from services.chunking_service import create_chunks
 from vectorstore.faiss_store import FAISSStore
 from rag.retriever import Retriever
 
 
 PDF_PATH = "data/DBMS.pdf"
+
+document_processing_pipeline = create_default_document_processing_pipeline()
 
 
 def load_test_cases():
@@ -22,9 +26,9 @@ def load_test_cases():
 
 def build_retriever():
 
-    pages = extract_text_from_pdf(PDF_PATH)
+    normalized_document = document_processing_pipeline.process(PDF_PATH)
 
-    chunks = create_chunks(pages)
+    chunks = create_chunks(normalized_document["pages"])
 
     texts = [chunk["text"] for chunk in chunks]
 

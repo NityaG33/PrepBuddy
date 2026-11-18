@@ -1,0 +1,413 @@
+{
+  "file": "4_Data Pre-Processing-I.pdf",
+  "processing_time_seconds": 0.333,
+  "page_count": 37,
+  "body_font_size": 20.06399917602539,
+  "total_normalized_blocks": 207,
+  "block_type_counts": {
+    "heading": 52,
+    "paragraph": 122,
+    "list_item": 33
+  },
+  "empty_pages": [],
+  "heading_examples": [
+    {
+      "page": 1,
+      "level": 1,
+      "text": "Data Pre-Processing-I"
+    },
+    {
+      "page": 2,
+      "level": 1,
+      "text": "Data"
+    },
+    {
+      "page": 2,
+      "level": 3,
+      "text": "In 2021, Facebook acquire WhatsApp by paying a huge price of $19 billion"
+    },
+    {
+      "page": 3,
+      "level": 1,
+      "text": "Structured vs. Unstructured Data in ML"
+    },
+    {
+      "page": 4,
+      "level": 1,
+      "text": "Structured Data in ML"
+    },
+    {
+      "page": 5,
+      "level": 1,
+      "text": "Types of Features"
+    },
+    {
+      "page": 6,
+      "level": 1,
+      "text": "Types of Features Contd…."
+    },
+    {
+      "page": 6,
+      "level": 2,
+      "text": "Interval"
+    },
+    {
+      "page": 6,
+      "level": 2,
+      "text": "Ratio"
+    },
+    {
+      "page": 6,
+      "level": 2,
+      "text": "Qualitative Ordinal (Ranked)"
+    },
+    {
+      "page": 7,
+      "level": 1,
+      "text": "Data Pre-Processing"
+    },
+    {
+      "page": 8,
+      "level": 1,
+      "text": "Data Pre-Processing"
+    },
+    {
+      "page": 9,
+      "level": 1,
+      "text": "Need of Data Pre-Processing"
+    },
+    {
+      "page": 10,
+      "level": 1,
+      "text": "Need for data Pre-processing"
+    },
+    {
+      "page": 10,
+      "level": 2,
+      "text": "➢Unstructured Data (Text)"
+    },
+    {
+      "page": 11,
+      "level": 1,
+      "text": "Pre- Processing in Structured Data"
+    },
+    {
+      "page": 11,
+      "level": 2,
+      "text": "➢Major data pre-processing tasks"
+    },
+    {
+      "page": 12,
+      "level": 1,
+      "text": "Data Cleaning"
+    },
+    {
+      "page": 13,
+      "level": 1,
+      "text": "Data Cleaning- Missing Values"
+    },
+    {
+      "page": 14,
+      "level": 1,
+      "text": "Data Cleaning- Missing Values Contd…"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 73,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 2,
+      "text_length": 379,
+      "block_count": 8,
+      "heading_count": 2,
+      "paragraph_count": 6,
+      "list_item_count": 0
+    },
+    {
+      "page": 3,
+      "text_length": 38,
+      "block_count": 1,
+      "heading_count": 1,
+      "paragraph_count": 0,
+      "list_item_count": 0
+    },
+    {
+      "page": 4,
+      "text_length": 317,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 5,
+      "text_length": 468,
+      "block_count": 9,
+      "heading_count": 1,
+      "paragraph_count": 5,
+      "list_item_count": 3
+    },
+    {
+      "page": 6,
+      "text_length": 518,
+      "block_count": 7,
+      "heading_count": 4,
+      "paragraph_count": 0,
+      "list_item_count": 3
+    },
+    {
+      "page": 7,
+      "text_length": 441,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 8,
+      "text_length": 441,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 9,
+      "text_length": 421,
+      "block_count": 10,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 7
+    },
+    {
+      "page": 10,
+      "text_length": 349,
+      "block_count": 4,
+      "heading_count": 2,
+      "paragraph_count": 0,
+      "list_item_count": 2
+    },
+    {
+      "page": 11,
+      "text_length": 146,
+      "block_count": 6,
+      "heading_count": 2,
+      "paragraph_count": 0,
+      "list_item_count": 4
+    },
+    {
+      "page": 12,
+      "text_length": 307,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 1
+    },
+    {
+      "page": 13,
+      "text_length": 433,
+      "block_count": 8,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 4
+    },
+    {
+      "page": 14,
+      "text_length": 340,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 1
+    },
+    {
+      "page": 15,
+      "text_length": 77,
+      "block_count": 2,
+      "heading_count": 2,
+      "paragraph_count": 0,
+      "list_item_count": 0
+    },
+    {
+      "page": 16,
+      "text_length": 417,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 17,
+      "text_length": 693,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 18,
+      "text_length": 335,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 19,
+      "text_length": 340,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 4,
+      "list_item_count": 0
+    },
+    {
+      "page": 20,
+      "text_length": 351,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 21,
+      "text_length": 323,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 22,
+      "text_length": 451,
+      "block_count": 5,
+      "heading_count": 3,
+      "paragraph_count": 0,
+      "list_item_count": 2
+    },
+    {
+      "page": 23,
+      "text_length": 221,
+      "block_count": 4,
+      "heading_count": 3,
+      "paragraph_count": 0,
+      "list_item_count": 1
+    },
+    {
+      "page": 24,
+      "text_length": 194,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 25,
+      "text_length": 324,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 2
+    },
+    {
+      "page": 26,
+      "text_length": 470,
+      "block_count": 7,
+      "heading_count": 2,
+      "paragraph_count": 5,
+      "list_item_count": 0
+    },
+    {
+      "page": 27,
+      "text_length": 272,
+      "block_count": 5,
+      "heading_count": 2,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 28,
+      "text_length": 260,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 29,
+      "text_length": 353,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 4,
+      "list_item_count": 0
+    },
+    {
+      "page": 30,
+      "text_length": 239,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 31,
+      "text_length": 377,
+      "block_count": 6,
+      "heading_count": 1,
+      "paragraph_count": 5,
+      "list_item_count": 0
+    },
+    {
+      "page": 32,
+      "text_length": 878,
+      "block_count": 17,
+      "heading_count": 2,
+      "paragraph_count": 15,
+      "list_item_count": 0
+    },
+    {
+      "page": 33,
+      "text_length": 662,
+      "block_count": 7,
+      "heading_count": 1,
+      "paragraph_count": 6,
+      "list_item_count": 0
+    },
+    {
+      "page": 34,
+      "text_length": 513,
+      "block_count": 8,
+      "heading_count": 1,
+      "paragraph_count": 6,
+      "list_item_count": 1
+    },
+    {
+      "page": 35,
+      "text_length": 176,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 36,
+      "text_length": 517,
+      "block_count": 8,
+      "heading_count": 2,
+      "paragraph_count": 4,
+      "list_item_count": 2
+    },
+    {
+      "page": 37,
+      "text_length": 380,
+      "block_count": 20,
+      "heading_count": 1,
+      "paragraph_count": 19,
+      "list_item_count": 0
+    }
+  ]
+}

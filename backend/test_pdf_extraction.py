@@ -3,7 +3,9 @@ import json
 import time
 from pathlib import Path
 
-from services.pdf_service import extract_text_from_pdf
+from services.document_processing.pipeline import (
+    create_default_document_processing_pipeline,
+)
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -12,6 +14,9 @@ OUTPUT_DIR = BASE_DIR / "test_output"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
 
+document_processing_pipeline = (
+    create_default_document_processing_pipeline()
+)
 
 def test_pdf(pdf_path: Path):
     print(f"\nProcessing: {pdf_path.name}")
@@ -19,8 +24,7 @@ def test_pdf(pdf_path: Path):
     start_time = time.perf_counter()
 
     try:
-        result = extract_text_from_pdf(str(pdf_path))
-
+        result = document_processing_pipeline.process(str(pdf_path))
         elapsed_time = time.perf_counter() - start_time
 
         pages = result.get("pages", [])

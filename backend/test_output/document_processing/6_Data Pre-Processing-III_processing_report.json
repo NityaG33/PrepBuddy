@@ -1,0 +1,357 @@
+{
+  "file": "6_Data Pre-Processing-III.pdf",
+  "processing_time_seconds": 0.175,
+  "page_count": 30,
+  "body_font_size": 21.959999084472656,
+  "total_normalized_blocks": 168,
+  "block_type_counts": {
+    "heading": 54,
+    "paragraph": 105,
+    "list_item": 9
+  },
+  "empty_pages": [],
+  "heading_examples": [
+    {
+      "page": 1,
+      "level": 1,
+      "text": "Data Pre-Processing-III"
+    },
+    {
+      "page": 1,
+      "level": 2,
+      "text": "(Data Reduction)"
+    },
+    {
+      "page": 2,
+      "level": 1,
+      "text": "Dimensionality/Data Reduction"
+    },
+    {
+      "page": 3,
+      "level": 1,
+      "text": "Dimensionality/Data Reduction"
+    },
+    {
+      "page": 4,
+      "level": 1,
+      "text": "Dimensionality/Data Reduction"
+    },
+    {
+      "page": 5,
+      "level": 1,
+      "text": "Data Reduction Techniques"
+    },
+    {
+      "page": 6,
+      "level": 1,
+      "text": "Feature Selection"
+    },
+    {
+      "page": 7,
+      "level": 1,
+      "text": "Feature Selection (Contd….)"
+    },
+    {
+      "page": 8,
+      "level": 1,
+      "text": "Feature Selection- Measuring Feature Redundancy"
+    },
+    {
+      "page": 9,
+      "level": 1,
+      "text": "Feature Selection- Measuring Feature Redundancy"
+    },
+    {
+      "page": 10,
+      "level": 1,
+      "text": "Feature Selection- Measuring Feature Redundancy"
+    },
+    {
+      "page": 11,
+      "level": 1,
+      "text": "Feature Selection- Measuring Feature Redundancy"
+    },
+    {
+      "page": 11,
+      "level": 3,
+      "text": "1. Hamming distance: number of values which are different in two feature vectors."
+    },
+    {
+      "page": 11,
+      "level": 3,
+      "text": "2. Jaccard distance: 1- Jaccard Similarity"
+    },
+    {
+      "page": 12,
+      "level": 1,
+      "text": "Overall Feature Selection Process"
+    },
+    {
+      "page": 13,
+      "level": 1,
+      "text": "Feature Selection Approaches"
+    },
+    {
+      "page": 14,
+      "level": 1,
+      "text": "Feature Selection Approaches"
+    },
+    {
+      "page": 15,
+      "level": 1,
+      "text": "Feature Selection Approaches"
+    },
+    {
+      "page": 16,
+      "level": 1,
+      "text": "Feature Selection Approaches"
+    },
+    {
+      "page": 16,
+      "level": 2,
+      "text": "Embedded Approach"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text_length": 56,
+      "block_count": 3,
+      "heading_count": 2,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 2,
+      "text_length": 607,
+      "block_count": 6,
+      "heading_count": 1,
+      "paragraph_count": 5,
+      "list_item_count": 0
+    },
+    {
+      "page": 3,
+      "text_length": 50,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 4,
+      "text_length": 273,
+      "block_count": 9,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 7
+    },
+    {
+      "page": 5,
+      "text_length": 363,
+      "block_count": 6,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 2
+    },
+    {
+      "page": 6,
+      "text_length": 650,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 7,
+      "text_length": 390,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 8,
+      "text_length": 247,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 4,
+      "list_item_count": 0
+    },
+    {
+      "page": 9,
+      "text_length": 192,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 10,
+      "text_length": 446,
+      "block_count": 11,
+      "heading_count": 1,
+      "paragraph_count": 10,
+      "list_item_count": 0
+    },
+    {
+      "page": 11,
+      "text_length": 579,
+      "block_count": 6,
+      "heading_count": 3,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 12,
+      "text_length": 33,
+      "block_count": 1,
+      "heading_count": 1,
+      "paragraph_count": 0,
+      "list_item_count": 0
+    },
+    {
+      "page": 13,
+      "text_length": 317,
+      "block_count": 7,
+      "heading_count": 1,
+      "paragraph_count": 6,
+      "list_item_count": 0
+    },
+    {
+      "page": 14,
+      "text_length": 330,
+      "block_count": 6,
+      "heading_count": 1,
+      "paragraph_count": 5,
+      "list_item_count": 0
+    },
+    {
+      "page": 15,
+      "text_length": 682,
+      "block_count": 6,
+      "heading_count": 1,
+      "paragraph_count": 5,
+      "list_item_count": 0
+    },
+    {
+      "page": 16,
+      "text_length": 436,
+      "block_count": 6,
+      "heading_count": 2,
+      "paragraph_count": 4,
+      "list_item_count": 0
+    },
+    {
+      "page": 17,
+      "text_length": 461,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 4,
+      "list_item_count": 0
+    },
+    {
+      "page": 18,
+      "text_length": 288,
+      "block_count": 2,
+      "heading_count": 1,
+      "paragraph_count": 1,
+      "list_item_count": 0
+    },
+    {
+      "page": 19,
+      "text_length": 421,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 4,
+      "list_item_count": 0
+    },
+    {
+      "page": 20,
+      "text_length": 471,
+      "block_count": 5,
+      "heading_count": 1,
+      "paragraph_count": 4,
+      "list_item_count": 0
+    },
+    {
+      "page": 21,
+      "text_length": 28,
+      "block_count": 1,
+      "heading_count": 1,
+      "paragraph_count": 0,
+      "list_item_count": 0
+    },
+    {
+      "page": 22,
+      "text_length": 672,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 23,
+      "text_length": 540,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 24,
+      "text_length": 471,
+      "block_count": 4,
+      "heading_count": 1,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 25,
+      "text_length": 214,
+      "block_count": 5,
+      "heading_count": 3,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    },
+    {
+      "page": 26,
+      "text_length": 589,
+      "block_count": 7,
+      "heading_count": 2,
+      "paragraph_count": 5,
+      "list_item_count": 0
+    },
+    {
+      "page": 27,
+      "text_length": 240,
+      "block_count": 12,
+      "heading_count": 9,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 28,
+      "text_length": 274,
+      "block_count": 20,
+      "heading_count": 7,
+      "paragraph_count": 13,
+      "list_item_count": 0
+    },
+    {
+      "page": 29,
+      "text_length": 411,
+      "block_count": 7,
+      "heading_count": 4,
+      "paragraph_count": 3,
+      "list_item_count": 0
+    },
+    {
+      "page": 30,
+      "text_length": 535,
+      "block_count": 3,
+      "heading_count": 1,
+      "paragraph_count": 2,
+      "list_item_count": 0
+    }
+  ]
+}
