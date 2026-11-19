@@ -6,14 +6,25 @@ from uuid import uuid4
 from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 from sqlalchemy.orm import Session
 
-from core.config import UPLOAD_DIR
+from core.config import (
+    UPLOAD_DIR,
+    MAX_PDF_UPLOAD_BYTES,
+    UPLOAD_READ_CHUNK_BYTES,
+)
 from db.database import get_db
 from db.models import Document, Workspace
 from services.chunking_service import create_chunks
 from services.document_processing.pipeline import (
     create_default_document_processing_pipeline,
 )
+from services.document_processing.errors import (
+    DocumentProcessingValidationError,
+)
 from services.embedding_service import generate_embeddings
+from services.upload_validation import (
+    UploadValidationError,
+    save_pdf_upload,
+)
 from vectorstore.faiss_store import FAISSStore
 from vectorstore.store import (
     get_vector_store,
@@ -37,14 +48,7 @@ async def upload_document(
     workspace_id: int | None = Form(default=None),
     db: Session = Depends(get_db),
 ):
-    # 1. Validate the uploaded file
-    if not file.filename or not file.filename.lower().endswith(".pdf"):
-        raise HTTPException(
-            status_code=400,
-            detail="Only PDF files are supported",
-        )
-
-    # 2. Find the requested workspace or create a default one
+    # 1. Find the requested workspace or create a default one
     if workspace_id is not None:
         workspace = db.get(Workspace, workspace_id)
 
@@ -62,39 +66,38 @@ async def upload_document(
             db.commit()
             db.refresh(workspace)
 
-    # 3. Save the uploaded PDF persistently
-    original_filename = Path(file.filename).name
+    # 2. Create the document record before validation so failures remain visible.
+    original_filename = Path(file.filename or "upload").name
     stored_filename = f"{uuid4().hex}_{original_filename}"
     file_path = UPLOAD_DIR / stored_filename
 
-    file_bytes = await file.read()
-
-    if not file_bytes:
-        raise HTTPException(
-            status_code=400,
-            detail="Uploaded file is empty",
-        )
-
-    file_path.write_bytes(file_bytes)
-
-    # 4. Create a database record before processing
     document = Document(
         workspace_id=workspace.id,
         filename=original_filename,
         file_path=str(file_path),
         status="uploaded",
     )
-
     db.add(document)
     db.commit()
     db.refresh(document)
 
     try:
-        # 5. Mark the document as processing
+        if not file.filename or not file.filename.lower().endswith(".pdf"):
+            await file.close()
+            raise UploadValidationError("Only PDF files are supported")
+
+        # 3. Save the uploaded PDF persistently using bounded reads.
+        await save_pdf_upload(
+            file,
+            file_path,
+            max_upload_bytes=MAX_PDF_UPLOAD_BYTES,
+            read_chunk_bytes=UPLOAD_READ_CHUNK_BYTES,
+        )
+        # 4. Mark the document as processing.
         document.status = "processing"
         db.commit()
 
-        # 6. Extract structured PDF content
+        # 5. Extract structured PDF content.
         normalized_document = document_processing_pipeline.process(
             str(file_path)
         )
@@ -103,7 +106,7 @@ async def upload_document(
         # Phase 3 will replace that chunker with one that reads structured blocks.
         pages = normalized_document["pages"]
 
-        # 7. Create chunks
+        # 6. Create chunks.
         chunks = create_chunks(pages)
 
         # Attach document identity to every chunk
@@ -113,28 +116,28 @@ async def upload_document(
             chunk["filename"] = document.filename
 
         if not chunks:
-            raise ValueError(
+            raise DocumentProcessingValidationError(
                 "No text could be extracted from the PDF"
             )
 
-        # 8. Generate embeddings
+        # 7. Generate embeddings.
         texts = [chunk["text"] for chunk in chunks]
         embeddings = generate_embeddings(texts)
 
-        # 9. Get or create the FAISS vector store
+        # 8. Get or create the FAISS vector store.
         vector_store = get_vector_store()
 
         if vector_store is None:
             vector_store = FAISSStore(embeddings.shape[1])
             set_vector_store(vector_store)
 
-        # 10. Add vectors and metadata to FAISS
+        # 9. Add vectors and metadata to FAISS.
         vector_store.add(embeddings, chunks)
 
-        # 11. Persist the FAISS index
+        # 10. Persist the FAISS index.
         save_vector_store()
 
-        # 12. Mark the document as indexed
+        # 11. Mark the document as indexed.
         document.status = "indexed"
         document.page_count = len(pages)
         document.chunk_count = len(chunks)
@@ -153,9 +156,17 @@ async def upload_document(
             "message": "Document indexed successfully",
         }
 
-    except ValueError as exc:
-        # ValueError represents an expected document-processing problem:
-        # for example, a corrupt PDF or a PDF with no extractable text.
+    except UploadValidationError as exc:
+        document.status = "failed"
+        document.error_message = str(exc)[:2000]
+        db.commit()
+
+        raise HTTPException(
+            status_code=400,
+            detail=str(exc),
+        ) from exc
+
+    except DocumentProcessingValidationError as exc:
         document.status = "failed"
         document.error_message = str(exc)[:2000]
         db.commit()

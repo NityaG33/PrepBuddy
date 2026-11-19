@@ -21,3 +21,32 @@ UPLOAD_DIR = Path(
 )
 
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _positive_int_setting(name: str, default: int) -> int:
+    """Read a positive integer setting and fail fast for invalid config."""
+    value = int(os.getenv(name, str(default)))
+
+    if value <= 0:
+        raise ValueError(f"{name} must be a positive integer")
+
+    return value
+
+
+# Upload and extraction limits. They can be overridden in backend/.env.
+MAX_PDF_UPLOAD_BYTES = _positive_int_setting(
+    "MAX_PDF_UPLOAD_BYTES",
+    20 * 1024 * 1024,
+)
+UPLOAD_READ_CHUNK_BYTES = _positive_int_setting(
+    "UPLOAD_READ_CHUNK_BYTES",
+    1024 * 1024,
+)
+MAX_PDF_PAGE_COUNT = _positive_int_setting(
+    "MAX_PDF_PAGE_COUNT",
+    500,
+)
+MAX_EXTRACTED_TEXT_CHARS = _positive_int_setting(
+    "MAX_EXTRACTED_TEXT_CHARS",
+    5_000_000,
+)

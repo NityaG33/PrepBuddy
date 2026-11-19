@@ -3,7 +3,11 @@ from typing import Any
 
 import pymupdf
 
+from core.config import MAX_EXTRACTED_TEXT_CHARS, MAX_PDF_PAGE_COUNT
 from services.document_processing.base import PDFProcessor
+from services.document_processing.errors import (
+    DocumentProcessingValidationError,
+)
 
 
 class PyMuPDFProcessor(PDFProcessor):
@@ -15,6 +19,15 @@ class PyMuPDFProcessor(PDFProcessor):
     later in normalizer.py.
     """
 
+    def __init__(
+        self,
+        *,
+        max_page_count: int = MAX_PDF_PAGE_COUNT,
+        max_extracted_text_chars: int = MAX_EXTRACTED_TEXT_CHARS,
+    ):
+        self.max_page_count = max_page_count
+        self.max_extracted_text_chars = max_extracted_text_chars
+
     def extract(self, file_path: str) -> dict[str, Any]:
         pdf_path = Path(file_path)
 
@@ -22,15 +35,32 @@ class PyMuPDFProcessor(PDFProcessor):
             raise FileNotFoundError(f"PDF file was not found: {pdf_path}")
 
         if pdf_path.suffix.lower() != ".pdf":
-            raise ValueError("Only PDF files are supported")
+            raise DocumentProcessingValidationError(
+                "Only PDF files are supported"
+            )
 
         try:
             document = pymupdf.open(pdf_path)
         except Exception as exc:
-            raise ValueError("The uploaded file is not a valid PDF") from exc
+            raise DocumentProcessingValidationError(
+                "The uploaded file is not a valid PDF"
+            ) from exc
 
         try:
+            if document.needs_pass:
+                raise DocumentProcessingValidationError(
+                    "Password-protected PDFs are not supported"
+                )
+
+            page_count = len(document)
+
+            if page_count > self.max_page_count:
+                raise DocumentProcessingValidationError(
+                    "PDF exceeds the configured page count limit"
+                )
+
             pages = []
+            extracted_text_chars = 0
 
             for page_number, page in enumerate(document, start=1):
                 page_data = page.get_text("dict", sort=True)
@@ -51,6 +81,16 @@ class PyMuPDFProcessor(PDFProcessor):
 
                             if not text:
                                 continue
+
+                            extracted_text_chars += len(text)
+
+                            if (
+                                extracted_text_chars
+                                > self.max_extracted_text_chars
+                            ):
+                                raise DocumentProcessingValidationError(
+                                    "PDF exceeds the configured extracted text limit"
+                                )
 
                             spans.append(
                                 {
@@ -89,7 +129,7 @@ class PyMuPDFProcessor(PDFProcessor):
 
             return {
                 "metadata": document.metadata or {},
-                "page_count": len(document),
+                "page_count": page_count,
                 "pages": pages,
             }
 

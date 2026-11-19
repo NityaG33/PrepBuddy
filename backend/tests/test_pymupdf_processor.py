@@ -87,6 +87,47 @@ class TestPyMuPDFProcessor(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "not a valid PDF"):
             self.processor.extract(str(broken_pdf))
 
+    def test_rejects_pdf_signature_with_invalid_content(self):
+        broken_pdf = self.temp_path / "invalid-content.pdf"
+        broken_pdf.write_bytes(b"%PDF-1.7\nnot a valid PDF body")
+
+        with self.assertRaisesRegex(ValueError, "not a valid PDF"):
+            self.processor.extract(str(broken_pdf))
+
+    def test_rejects_pdf_above_page_limit(self):
+        two_page_pdf = self.temp_path / "two-pages.pdf"
+        document = pymupdf.open()
+        document.new_page()
+        document.new_page()
+        document.save(two_page_pdf)
+        document.close()
+
+        processor = PyMuPDFProcessor(max_page_count=1)
+
+        with self.assertRaisesRegex(ValueError, "page count limit"):
+            processor.extract(str(two_page_pdf))
+
+    def test_rejects_pdf_above_extracted_text_limit(self):
+        processor = PyMuPDFProcessor(max_extracted_text_chars=5)
+
+        with self.assertRaisesRegex(ValueError, "extracted text limit"):
+            processor.extract(str(self.valid_pdf_path))
+
+    def test_rejects_password_protected_pdf(self):
+        encrypted_pdf = self.temp_path / "encrypted.pdf"
+        document = pymupdf.open()
+        document.new_page().insert_text((72, 72), "Protected content")
+        document.save(
+            encrypted_pdf,
+            encryption=pymupdf.PDF_ENCRYPT_AES_256,
+            owner_pw="owner-password",
+            user_pw="user-password",
+        )
+        document.close()
+
+        with self.assertRaisesRegex(ValueError, "Password-protected"):
+            self.processor.extract(str(encrypted_pdf))
+
 
 if __name__ == "__main__":
     unittest.main()
