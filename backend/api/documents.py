@@ -31,6 +31,7 @@ from vectorstore.store import (
     set_vector_store,
     save_vector_store,
 )
+from services.hash_service import calculate_file_hash
 
 router = APIRouter(
     prefix="/documents",
@@ -93,11 +94,15 @@ async def upload_document(
             max_upload_bytes=MAX_PDF_UPLOAD_BYTES,
             read_chunk_bytes=UPLOAD_READ_CHUNK_BYTES,
         )
-        # 4. Mark the document as processing.
+
+        # 4. Calculate and store the document content hash.
+        document.content_hash = calculate_file_hash(str(file_path))
+
+        # 5. Mark the document as processing.
         document.status = "processing"
         db.commit()
 
-        # 5. Extract structured PDF content.
+        # 6. Extract structured PDF content.
         normalized_document = document_processing_pipeline.process(
             str(file_path)
         )
@@ -106,10 +111,10 @@ async def upload_document(
         # Phase 3 will replace that chunker with one that reads structured blocks.
         pages = normalized_document["pages"]
 
-        # 6. Create chunks.
+        # 7. Create chunks.
         chunks = create_chunks(pages)
 
-        # Attach document identity to every chunk
+        # 8. Attach document identity to every chunk
         for chunk in chunks:
             chunk["document_id"] = document.id
             chunk["workspace_id"] = workspace.id
@@ -120,24 +125,24 @@ async def upload_document(
                 "No text could be extracted from the PDF"
             )
 
-        # 7. Generate embeddings.
+        # 9. Generate embeddings.
         texts = [chunk["text"] for chunk in chunks]
         embeddings = generate_embeddings(texts)
 
-        # 8. Get or create the FAISS vector store.
+        # 10. Get or create the FAISS vector store.
         vector_store = get_vector_store()
 
         if vector_store is None:
             vector_store = FAISSStore(embeddings.shape[1])
             set_vector_store(vector_store)
 
-        # 9. Add vectors and metadata to FAISS.
+        # 11. Add vectors and metadata to FAISS.
         vector_store.add(embeddings, chunks)
 
-        # 10. Persist the FAISS index.
+        # 12. Persist the FAISS index.
         save_vector_store()
 
-        # 11. Mark the document as indexed.
+        # 13. Mark the document as indexed.
         document.status = "indexed"
         document.page_count = len(pages)
         document.chunk_count = len(chunks)
@@ -275,3 +280,6 @@ def delete_document(
         "document_id": document_id,
         "removed_chunks": removed_chunks,
     }
+
+
+

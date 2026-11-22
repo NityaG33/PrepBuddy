@@ -40,6 +40,18 @@ class Document(Base):
     chunk_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
     error_message: Mapped[str | None] = mapped_column(Text, nullable=True)
 
+    content_hash: Mapped[str | None] = mapped_column(
+        String(64), nullable=True, index=True
+    )
+
+    document_version: Mapped[int] = mapped_column(
+        Integer, default=1, nullable=False
+    )
+
+    index_version: Mapped[str | None] = mapped_column(
+        String(100), nullable=True
+    )
+
     created_at: Mapped[datetime] = mapped_column(
         DateTime, default=datetime.utcnow, nullable=False
     )
