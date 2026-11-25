@@ -13,7 +13,11 @@ from core.config import (
 )
 from db.database import get_db
 from db.models import Document, Workspace
-from services.chunking_service import create_chunks
+from services.intelligent_chunking_service import (
+    extract_block_contexts,
+    assemble_chunks,
+)
+from services.token_count_service import TokenCountService
 from services.document_processing.pipeline import (
     create_default_document_processing_pipeline,
 )
@@ -25,6 +29,7 @@ from services.upload_validation import (
     UploadValidationError,
     save_pdf_upload,
 )
+from services.duplicate_service import find_duplicate_document
 from vectorstore.faiss_store import FAISSStore
 from vectorstore.store import (
     get_vector_store,
@@ -37,6 +42,8 @@ router = APIRouter(
     prefix="/documents",
     tags=["Documents"],
 )
+
+token_count_service = TokenCountService()
 
 document_processing_pipeline = (
     create_default_document_processing_pipeline()
@@ -98,7 +105,30 @@ async def upload_document(
         # 4. Calculate and store the document content hash.
         document.content_hash = calculate_file_hash(str(file_path))
 
-        # 5. Mark the document as processing.
+        # 5. Check for duplicate content within the same workspace.
+        duplicate = find_duplicate_document(
+            db=db,
+            workspace_id=workspace.id,
+            content_hash=document.content_hash,
+            exclude_document_id=document.id,
+        )
+
+        if duplicate is not None:
+            document.status = "failed"
+            document.error_message = (
+                "Duplicate document detected in this workspace"
+            )
+            db.commit()
+
+            raise HTTPException(
+                status_code=409,
+                detail={
+                    "message": "Duplicate document detected in this workspace",
+                    "duplicate_document_id": duplicate.id,
+                    "duplicate_filename": duplicate.filename,
+                },
+            )
+
         document.status = "processing"
         db.commit()
 
@@ -107,13 +137,19 @@ async def upload_document(
             str(file_path)
         )
 
-        # `pages` is a compatibility view used by our current fixed-size chunker.
-        # Phase 3 will replace that chunker with one that reads structured blocks.
+        # Extract normalized document information.
         pages = normalized_document["pages"]
 
-        # 7. Create chunks.
-        chunks = create_chunks(pages)
+        # 7. Extract structured block context.
+        block_contexts = extract_block_contexts(normalized_document)
 
+        # 8. Create intelligent chunks.
+        chunks = assemble_chunks(
+            contexts=block_contexts,
+            token_service=token_count_service,
+            document_id=document.id,
+        )
+        
         # 8. Attach document identity to every chunk
         for chunk in chunks:
             chunk["document_id"] = document.id
@@ -180,6 +216,9 @@ async def upload_document(
             status_code=422,
             detail=str(exc),
         ) from exc
+
+    except HTTPException:
+        raise
 
     except Exception as exc:
         # Any other exception is unexpected: database, vector-store,

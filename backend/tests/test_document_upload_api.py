@@ -14,7 +14,9 @@ from services.hash_service import calculate_file_hash
 
 from api import documents
 from db.database import Base
-from db.models import Document
+from db.models import Document, Workspace
+
+
 
 
 class TestDocumentUploadFailures(unittest.TestCase):
@@ -206,6 +208,269 @@ class TestDocumentUploadSuccess(unittest.TestCase):
 
         # Verify the uploaded PDF exists
         self.assertTrue(Path(document.file_path).exists())
+
+
+    def test_duplicate_upload_returns_409_and_skips_processing(self):
+        pdf_content = b"%PDF-1.7\n"
+
+        class FakePipeline:
+            def process(self, _file_path):
+                return {
+                    "pages": [
+                        {"text": "Sample document content"}
+                    ]
+                }
+
+        class FakeVectorStore:
+            def add(self, _embeddings, _chunks):
+                pass
+
+        fake_vector_store = FakeVectorStore()
+
+        # First upload: successfully index the document.
+        first_upload = UploadFile(
+            filename="original.pdf",
+            file=BytesIO(pdf_content),
+        )
+
+        with (
+            patch.object(
+                documents,
+                "document_processing_pipeline",
+                FakePipeline(),
+            ),
+            patch.object(
+                documents,
+                "create_chunks",
+                return_value=[
+                    {"text": "Sample document content"}
+                ],
+            ),
+            patch.object(
+                documents,
+                "generate_embeddings",
+                return_value=np.array([[0.1, 0.2, 0.3]]),
+            ),
+            patch.object(
+                documents,
+                "get_vector_store",
+                return_value=fake_vector_store,
+            ),
+            patch.object(
+                documents,
+                "save_vector_store",
+            ),
+        ):
+            first_response = asyncio.run(
+                documents.upload_document(
+                    first_upload,
+                    None,
+                    self.session,
+                )
+            )
+
+        self.assertEqual(first_response["status"], "indexed")
+
+        # Second upload: same PDF content, same workspace.
+        second_upload = UploadFile(
+            filename="duplicate.pdf",
+            file=BytesIO(pdf_content),
+        )
+
+        with (
+            patch.object(
+                documents,
+                "document_processing_pipeline",
+            ) as mock_pipeline,
+            patch.object(
+                documents,
+                "create_chunks",
+            ) as mock_chunking,
+            patch.object(
+                documents,
+                "generate_embeddings",
+            ) as mock_embeddings,
+            patch.object(
+                documents,
+                "get_vector_store",
+            ) as mock_vector_store,
+            patch.object(
+                documents,
+                "save_vector_store",
+            ) as mock_save,
+        ):
+            with self.assertRaises(HTTPException) as raised:
+                asyncio.run(
+                    documents.upload_document(
+                        second_upload,
+                        None,
+                        self.session,
+                    )
+                )
+
+        # Verify the duplicate API response.
+        error = raised.exception
+
+        self.assertEqual(error.status_code, 409)
+        self.assertEqual(
+            error.detail["message"],
+            "Duplicate document detected in this workspace",
+        )
+
+        # Verify the original document is identified.
+        original_document = (
+            self.session.query(Document)
+            .filter_by(filename="original.pdf")
+            .one()
+        )
+
+        self.assertEqual(
+            error.detail["duplicate_document_id"],
+            original_document.id,
+        )
+
+        # Verify the duplicate record is persisted as failed.
+        duplicate_document = (
+            self.session.query(Document)
+            .filter_by(filename="duplicate.pdf")
+            .one()
+        )
+
+        self.assertEqual(duplicate_document.status, "failed")
+        self.assertEqual(
+            duplicate_document.error_message,
+            "Duplicate document detected in this workspace",
+        )
+        self.assertEqual(
+            duplicate_document.content_hash,
+            original_document.content_hash,
+        )
+
+        # Verify downstream processing was skipped.
+        mock_pipeline.process.assert_not_called()
+        mock_chunking.assert_not_called()
+        mock_embeddings.assert_not_called()
+        mock_vector_store.assert_not_called()
+        mock_save.assert_not_called()
+
+
+    def test_same_pdf_can_be_uploaded_to_different_workspaces(self):
+        pdf_content = b"%PDF-1.7\n"
+
+        # Create two separate workspaces.
+        workspace_one = Workspace(name="Workspace 1")
+        workspace_two = Workspace(name="Workspace 2")
+
+        self.session.add_all([workspace_one, workspace_two])
+        self.session.commit()
+
+        self.session.refresh(workspace_one)
+        self.session.refresh(workspace_two)
+
+        class FakePipeline:
+            def process(self, _file_path):
+                return {
+                    "pages": [
+                        {"text": "Sample document content"}
+                    ]
+                }
+
+        class FakeVectorStore:
+            def add(self, _embeddings, _chunks):
+                pass
+
+        fake_vector_store = FakeVectorStore()
+
+        def upload_to_workspace(filename, workspace_id):
+            upload = UploadFile(
+                filename=filename,
+                file=BytesIO(pdf_content),
+            )
+
+            return asyncio.run(
+                documents.upload_document(
+                    upload,
+                    workspace_id,
+                    self.session,
+                )
+            )
+
+        with (
+            patch.object(
+                documents,
+                "document_processing_pipeline",
+                FakePipeline(),
+            ),
+            patch.object(
+                documents,
+                "create_chunks",
+                return_value=[
+                    {"text": "Sample document content"}
+                ],
+            ),
+            patch.object(
+                documents,
+                "generate_embeddings",
+                return_value=np.array([[0.1, 0.2, 0.3]]),
+            ),
+            patch.object(
+                documents,
+                "get_vector_store",
+                return_value=fake_vector_store,
+            ),
+            patch.object(
+                documents,
+                "save_vector_store",
+            ),
+        ):
+            # Upload identical bytes into Workspace 1.
+            first_response = upload_to_workspace(
+                "original.pdf",
+                workspace_one.id,
+            )
+
+            # Upload identical bytes into Workspace 2.
+            second_response = upload_to_workspace(
+                "same_content.pdf",
+                workspace_two.id,
+            )
+
+        # Both uploads should succeed.
+        self.assertEqual(first_response["status"], "indexed")
+        self.assertEqual(second_response["status"], "indexed")
+
+        # Verify each upload belongs to the correct workspace.
+        first_document = (
+            self.session.query(Document)
+            .filter_by(filename="original.pdf")
+            .one()
+        )
+
+        second_document = (
+            self.session.query(Document)
+            .filter_by(filename="same_content.pdf")
+            .one()
+        )
+
+        self.assertEqual(
+            first_document.workspace_id,
+            workspace_one.id,
+        )
+
+        self.assertEqual(
+            second_document.workspace_id,
+            workspace_two.id,
+        )
+
+        # Both files have identical content fingerprints.
+        self.assertEqual(
+            first_document.content_hash,
+            second_document.content_hash,
+        )
+
+        # Both documents were independently indexed.
+        self.assertEqual(first_document.status, "indexed")
+        self.assertEqual(second_document.status, "indexed")
 
 
 if __name__ == "__main__":
